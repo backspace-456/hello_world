@@ -3,23 +3,23 @@ import yaml
 
 def define_actions(INDEX, index_, mappings):
 	# 备份原有数据到当前目录下
-	with open('/home/zjchen/bin/y/metadata/actions.yaml', 'r') as f:
+	with open('/code/y/metadata/actions.yaml', 'r') as f:
 		temp = f.read()
-		with open('/home/zjchen/bin/hasura_middle/actions.yaml', 'w') as f1:
+		with open('actions.yaml', 'w') as f1:
 			f1.write(temp)
-	with open('/home/zjchen/bin/y/metadata/actions.graphql', 'r') as f:
+	with open('/code/y/metadata/actions.graphql', 'r') as f:
 		temp = f.read()
-		with open('/home/zjchen/bin/hasura_middle/actions.graphql', 'w') as f1:
+		with open('actions.graphql', 'w') as f1:
 			f1.write(temp)
 
 	# 处理graphql
-	with open('/home/zjchen/bin/hasura_middle/model_files/query_graphql_model.graphql','r')as f:
+	with open('model_files/query_graphql_model.graphql','r')as f:
 		add_query = f.read()
 	add_query = add_query.replace('INDEX', INDEX)
-	with open('/home/zjchen/bin/hasura_middle/model_files/graphql_model.graphql','r')as f:
+	with open('model_files/graphql_model.graphql','r')as f:
 		add_graphql = f.read()
 	add_graphql = add_graphql.replace('INDEX', INDEX)
-	with open('/home/zjchen/bin/hasura_middle/actions.graphql','r')as f:
+	with open('actions.graphql','r')as f:
 		graphql = f.read()
 	graphql = list(graphql)
 	graphql.insert(13,add_query)
@@ -28,8 +28,8 @@ def define_actions(INDEX, index_, mappings):
 	add_graphql, all_string_type, all_num_type = extract_field(INDEX, mappings)
 	graphql += add_graphql
 	# 写入metadata
-	with open('/home/zjchen/bin/y/metadata/actions.graphql','w') as f:
-	# with open('/home/zjchen/bin/hasura_middle/actions.graphql','w') as f:
+	with open('/code/y/metadata/actions.graphql','w') as f:
+	# with open('actions.graphql','w') as f:
 		f.write(graphql)
 	
 
@@ -47,7 +47,7 @@ def define_actions(INDEX, index_, mappings):
 
 
 def pack_yaml(allow_list1, allow_list2, INDEX, index_):
-	with open('/home/zjchen/bin/hasura_middle/model_files/actions_model.yaml') as f:
+	with open('model_files/actions_model.yaml') as f:
 		docs = yaml.load_all(f, Loader=yaml.FullLoader)
 		docs = list(docs)
 		if len(allow_list1) != 0:
@@ -59,15 +59,15 @@ def pack_yaml(allow_list1, allow_list2, INDEX, index_):
 			docs[0][1]['permissions'] = allow_list2
 		docs[0][1]['definition']['handler'] = docs[0][1]['definition']['handler'].replace('index_', index_)
 		docs[0][1]['name'] = docs[0][1]['name'].replace('INDEX', INDEX)
-	with open('/home/zjchen/bin/y/metadata/actions.yaml') as f:
+	with open('/code/y/metadata/actions.yaml') as f:
 		docs1 = yaml.load_all(f, Loader=yaml.FullLoader)
 		docs1 = list(docs1)
 		docs1[0]['actions'].append(docs[0][0])
 
 		docs1[0]['actions'].append(docs[0][1])
 
-	with open('/home/zjchen/bin/y/metadata/actions.yaml', 'w') as f:
-	# with open('/home/zjchen/bin/hasura_middle/actions.yaml', 'w') as f:
+	with open('/code/y/metadata/actions.yaml', 'w') as f:
+	# with open('actions.yaml', 'w') as f:
 		yaml.dump(docs1[0], f)
 
 
