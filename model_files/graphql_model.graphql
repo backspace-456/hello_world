@@ -1,0 +1,125 @@
+
+input INDEXAggModel {
+  NormalAgg_First: INDEXAggType
+  NormalAgg_Second: INDEXAggType
+  ObjectAgg_First: INDEXObjectAggType
+  ObjectAgg_Second: INDEXObjectAggType
+  SelfBuildAgg: jsonb
+}
+
+input INDEXAggType {
+  terms: INDEXAggTerms
+  avg: INDEXAggAvg
+  range: INDEXAggRange
+  stats: INDEXAggStats
+  cardinality: INDEXAggCardinality
+  aggs: INDEXAggModel
+}
+
+input INDEXAggTerms {
+  field: INDEXType
+  size: Int
+}
+
+input INDEXAggAvg {
+  field: INDEXNumType!
+}
+
+input INDEXAggRange {
+  field: INDEXNumType!
+  ranges: [Ranges!]
+}
+
+
+input INDEXAggStats {
+  field: INDEXNumType
+}
+
+input INDEXAggCardinality {
+  field: INDEXType
+}
+
+input INDEXObjectAggType {
+  terms: INDEXObjectAggTerms
+  avg: INDEXObjectAggAvg
+  range: INDEXObjectAggRange
+  stats: INDEXObjectAggStats
+  cardinality: INDEXObjectAggCardinality
+  aggs: INDEXAggModel
+}
+
+input INDEXObjectAggTerms {
+  field: String
+  size: Int
+}
+
+input INDEXObjectAggAvg {
+  field: String
+}
+
+input INDEXObjectAggRange {
+  field: String
+  ranges: [Ranges!]
+}
+
+input INDEXObjectAggStats {
+  field: String
+}
+
+input INDEXObjectAggCardinality {
+  field: String
+}
+
+input INDEXSearchModel {
+  query_string: INDEXQueryString
+  multi_match: INDEXMultiMatch
+  match: INDEXMatch
+  range: INDEXRange
+  bool: INDEXBool
+}
+
+input INDEXMultiMatch {
+  query: String
+  fields: [String!]
+}
+input INDEXQueryString {
+  query: String
+}
+input INDEXBool {
+  should: [INDEXSearchModel!]
+}
+
+input INDEXObjectSearchModel {
+  query_string: INDEXQueryString
+  multi_match: INDEXMultiMatch
+  match: jsonb
+  range: jsonb
+  bool: INDEXObjectBool
+}
+
+input INDEXObjectBool {
+  should: [INDEXObjectSearchModel!]
+}
+
+type INDEXOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: INDEX_HitsFirst
+  aggregations: jsonb
+}
+
+
+type INDEX_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: INDEX_HitsSecond
+}
+
+type INDEX_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: INDEX_fields
+}

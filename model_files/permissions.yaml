@@ -1,0 +1,4 @@
+
+    permissions:
+      - role: user
+      - role: tryer

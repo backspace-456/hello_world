@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "properties": {
+      "index_name":{
+        "type": "keyword"
+      },
+      "mappings":{
+        "type": "keyword"
+      }
+    }
+  }
+}

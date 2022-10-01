@@ -1,0 +1,435 @@
+- actions:
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/china_dns_info/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: china_dns_info_normalsearch
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/china_dns_info/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: china_dns_info_objectsearch
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/tryes-1/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input }}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: tryes_normalsearch
+    permissions:
+    - role: user
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_monthly_dns/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_monthly_dns_normalsearch
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_monthly_dns/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_monthly_dns_objectsearch
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_monthly_psr/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_monthly_psr_normal_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_monthly_psr/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_monthly_psr_object_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_monthly_icp/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_monthly_icp_normal_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_monthly_icp/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_monthly_icp_object_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_monthly_asset/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_monthly_asset_normal_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_monthly_asset/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_monthly_asset_object_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_monthly_active_ip/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_monthly_active_ip_normal_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_monthly_active_ip/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_monthly_active_ip_object_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_daily_psr/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_daily_psr_normal_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_daily_psr/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_daily_psr_object_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_daily_icp/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_daily_icp_normal_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_daily_icp/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_daily_icp_object_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_daily_dns/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_daily_dns_normal_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_daily_dns/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_daily_dns_object_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_daily_asset/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_daily_asset_normal_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_daily_asset/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_daily_asset_object_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_daily_active_ip/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_daily_active_ip_normal_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_trend_daily_active_ip/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_trend_daily_active_ip_object_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_route/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_route_normal_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_route/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_route_object_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_domain/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_domain_normal_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_domain/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_domain_object_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_organization/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_organization_normal_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_organization/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_organization_object_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_ip/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_ip_normal_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_ip/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_ip_object_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_cert/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_cert_normal_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/squint_cert/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: squint_cert_object_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/hasura_index_mappings/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: hasura_index_mappings_normal_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/hasura_index_mappings/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: hasura_index_mappings_object_search
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/vpn_traffic_count/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      kind: synchronous
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: VpnTrafficCountSearch
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/tryes-1/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: tryes_1_normalsearch
+    permissions:
+    - user
+    - tryer
+  - definition:
+      handler: https://es.database.hitwh.net.cn:9002/tryes-1/_search
+      headers:
+      - name: Authorization
+        value: ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ==
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+    name: tryes_1_normalsearch
+    permissions:
+    - user
+    - tryer
+  custom_types:
+    enums: []
+    input_objects: []
+    objects:
+    - name: VpnTrafficCountOutput
+    scalars:
+    - name: jsonb

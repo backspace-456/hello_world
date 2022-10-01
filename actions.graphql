@@ -1,0 +1,3641 @@
+type Query {
+  tryes_normalsearch (
+    query: jsonb
+    query1: jsonb
+  ): jsonb
+  squint_trend_monthly_dns_normalsearch (
+    from: Int
+    size: Int
+    aggs: squint_trend_monthly_dnsAggModel
+    query: squint_trend_monthly_dnsSearchModel
+    sort: [squint_trend_monthly_dnsSort]
+    track_total_hits: Boolean
+  ): squint_trend_monthly_dnsOutput
+
+  squint_trend_monthly_dns_objectsearch (
+    from: Int
+    size: Int
+    aggs: squint_trend_monthly_dnsAggModel
+    query: squint_trend_monthly_dnsObjectSearchModel
+    track_total_hits: Boolean
+  ): squint_trend_monthly_dnsOutput
+  squint_trend_monthly_psr_normal_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_monthly_psrAggModel
+    query: squint_trend_monthly_psrSearchModel
+    sort: [squint_trend_monthly_psrSort]
+    track_total_hits: Boolean
+  ): squint_trend_monthly_psrOutput
+
+  squint_trend_monthly_psr_object_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_monthly_psrAggModel
+    query: squint_trend_monthly_psr_object_searchModel
+    sort: [jsonb]
+    track_total_hits: Boolean
+  ): squint_trend_monthly_psrOutput
+  squint_trend_monthly_icp_normal_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_monthly_icpAggModel
+    query: squint_trend_monthly_icpSearchModel
+    sort: [squint_trend_monthly_icpSort]
+    track_total_hits: Boolean
+  ): squint_trend_monthly_icpOutput
+
+  squint_trend_monthly_icp_object_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_monthly_icpAggModel
+    query: squint_trend_monthly_icp_object_searchModel
+    sort: [jsonb]
+    track_total_hits: Boolean
+  ): squint_trend_monthly_icpOutput
+  squint_trend_monthly_asset_normal_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_monthly_assetAggModel
+    query: squint_trend_monthly_assetSearchModel
+    sort: [squint_trend_monthly_assetSort]
+    track_total_hits: Boolean
+  ): squint_trend_monthly_assetOutput
+
+  squint_trend_monthly_asset_object_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_monthly_assetAggModel
+    query: squint_trend_monthly_asset_object_searchModel
+    sort: [jsonb]
+    track_total_hits: Boolean
+  ): squint_trend_monthly_assetOutput
+  squint_trend_monthly_active_ip_normal_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_monthly_active_ipAggModel
+    query: squint_trend_monthly_active_ipSearchModel
+    sort: [squint_trend_monthly_active_ipSort]
+    track_total_hits: Boolean
+  ): squint_trend_monthly_active_ipOutput
+
+  squint_trend_monthly_active_ip_object_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_monthly_active_ipAggModel
+    query: squint_trend_monthly_active_ip_object_searchModel
+    track_total_hits: Boolean
+    sort: [jsonb]
+  ): squint_trend_monthly_active_ipOutput
+  squint_trend_daily_psr_normal_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_daily_psrAggModel
+    query: squint_trend_daily_psrSearchModel
+    sort: [squint_trend_daily_psrSort]
+    track_total_hits: Boolean
+  ): squint_trend_daily_psrOutput
+
+  squint_trend_daily_psr_object_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_daily_psrAggModel
+    query: squint_trend_daily_psr_object_searchModel
+    sort: [jsonb]
+    track_total_hits: Boolean
+  ): squint_trend_daily_psrOutput
+  squint_trend_daily_icp_normal_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_daily_icpAggModel
+    query: squint_trend_daily_icpSearchModel
+    sort: [squint_trend_daily_icpSort]
+    track_total_hits: Boolean
+  ): squint_trend_daily_icpOutput
+
+  squint_trend_daily_icp_object_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_daily_icpAggModel
+    query: squint_trend_daily_icp_object_searchModel
+    sort: [jsonb]
+    track_total_hits: Boolean
+  ): squint_trend_daily_icpOutput
+  squint_trend_daily_dns_normal_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_daily_dnsAggModel
+    query: squint_trend_daily_dnsSearchModel
+    sort: [squint_trend_daily_dnsSort]
+    track_total_hits: Boolean
+  ): squint_trend_daily_dnsOutput
+
+  squint_trend_daily_dns_object_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_daily_dnsAggModel
+    query: squint_trend_daily_dns_object_searchModel
+    sort: [jsonb]
+    track_total_hits: Boolean
+  ): squint_trend_daily_dnsOutput
+  squint_trend_daily_asset_normal_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_daily_assetAggModel
+    query: squint_trend_daily_assetSearchModel
+    sort: [squint_trend_daily_assetSort]
+    track_total_hits: Boolean
+  ): squint_trend_daily_assetOutput
+
+  squint_trend_daily_asset_object_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_daily_assetAggModel
+    query: squint_trend_daily_asset_object_searchModel
+    sort: [jsonb]
+    track_total_hits: Boolean
+  ): squint_trend_daily_assetOutput
+  squint_trend_daily_active_ip_normal_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_daily_active_ipAggModel
+    query: squint_trend_daily_active_ipSearchModel
+    sort: [squint_trend_daily_active_ipSort]
+    track_total_hits: Boolean
+  ): squint_trend_daily_active_ipOutput
+
+  squint_trend_daily_active_ip_object_search (
+    from: Int
+    size: Int
+    aggs: squint_trend_daily_active_ipAggModel
+    query: squint_trend_daily_active_ip_object_searchModel
+    sort: [jsonb]
+    track_total_hits: Boolean
+  ): squint_trend_daily_active_ipOutput
+  squint_route_normal_search (
+    from: Int
+    size: Int
+    aggs: squint_routeAggModel
+    query: squint_routeSearchModel
+    sort: [squint_routeSort]
+    track_total_hits: Boolean
+  ): squint_routeOutput
+
+  squint_route_object_search (
+    from: Int
+    size: Int
+    aggs: squint_routeAggModel
+    query: squint_route_object_searchModel
+    sort: [jsonb]
+    track_total_hits: Boolean
+  ): squint_routeOutput
+  squint_domain_normal_search (
+    from: Int
+    size: Int
+    aggs: squint_domainAggModel
+    query: squint_domainSearchModel
+    sort: [squint_domainSort]
+    track_total_hits: Boolean
+  ): squint_domainOutput
+
+  squint_domain_object_search (
+    from: Int
+    size: Int
+    aggs: squint_domainAggModel
+    query: squint_domain_object_searchModel
+    sort: [jsonb]
+    track_total_hits: Boolean
+  ): squint_domainOutput
+  squint_organization_normal_search (
+    from: Int
+    size: Int
+    aggs: squint_organizationAggModel
+    query: squint_organizationSearchModel
+    sort: [squint_organizationSort]
+    track_total_hits: Boolean
+  ): squint_organizationOutput
+
+  squint_organization_object_search (
+    from: Int
+    size: Int
+    aggs: squint_organizationAggModel
+    query: squint_organization_object_searchModel
+    sort: [jsonb]
+    track_total_hits: Boolean
+  ): squint_organizationOutput
+  squint_ip_normal_search (
+    from: Int
+    size: Int
+    aggs: squint_ipAggModel
+    query: squint_ipSearchModel
+    sort: [squint_ipSort]
+    track_total_hits: Boolean
+  ): squint_ipOutput
+
+  squint_ip_object_search (
+    from: Int
+    size: Int
+    aggs: squint_ipAggModel
+    query: squint_ip_object_searchModel
+    sort: [jsonb]
+    track_total_hits: Boolean
+  ): squint_ipOutput
+  squint_cert_normal_search (
+    from: Int
+    size: Int
+    aggs: squint_certAggModel
+    query: squint_certSearchModel
+    sort: [squint_certSort]
+    track_total_hits: Boolean
+  ): squint_certOutput
+
+  squint_cert_object_search (
+    from: Int
+    size: Int
+    aggs: squint_certAggModel
+    query: squint_cert_object_searchModel
+    sort: [jsonb]
+    track_total_hits: Boolean
+  ): squint_certOutput
+  hasura_index_mappings_normal_search (
+    from: Int
+    size: Int
+    aggs: hasura_index_mappingsAggModel
+    query: hasura_index_mappingsSearchModel
+    sort: [jsonb]
+    track_total_hits: Boolean
+  ): hasura_index_mappingsOutput
+
+  hasura_index_mappings_object_search (
+    from: Int
+    size: Int
+    aggs: hasura_index_mappingsAggModel
+    query: hasura_index_mappings_object_searchModel
+    sort: [jsonb]
+    track_total_hits: Boolean
+  ): hasura_index_mappingsOutput
+  VpnTrafficCountSearch (
+    from: Int
+    size: Int
+    aggs: VpnTrafficCountAggModel
+    query: VpnTrafficCountSearchModel
+    sort: [jsonb]
+    track_total_hits: Boolean
+  ): VpnTrafficCountOutput
+}
+
+enum order_fields {
+  desc
+  asc
+}
+
+input order_type {
+  order: order_fields
+}
+
+input Bound {
+  gte: Float
+  lte: Float
+}
+
+input Ranges {
+  from: Float
+  to: Float
+  key: String
+}
+
+input VpnTrafficCountAggModel {
+  agg_first: VpnTrafficCountAggType
+  SelfBuildAgg: jsonb
+}
+
+input VpnTrafficCountAggType {
+  terms: VpnTrafficCountAggTerms
+  stats: VpnTrafficCountAggStats
+  cardinality: VpnTrafficCountAggCardinality
+}
+
+input VpnTrafficCountAggTerms {
+  field: String
+}
+
+input VpnTrafficCountAggStats {
+  field: String
+}
+
+input VpnTrafficCountAggCardinality {
+  field: String
+}
+
+input VpnTrafficCountSearchModel {
+  query_string: VpnTrafficCountSQueryString
+  bool: VpnTrafficCountSBool
+  multi_match: VpnTrafficCountMultiSearch
+  range: jsonb
+}
+input VpnTrafficCountMultiSearch {
+  query: String
+  fields: [String!]
+}
+input VpnTrafficCountSBool {
+  must: [VpnTrafficCountSearchModel!]
+}
+input VpnTrafficCountSQueryString {
+  query: String
+  default_field: String
+}
+
+
+type VpnTrafficCountOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: VpnTrafficCount_HitsFirst
+  aggregations: jsonb
+}
+
+
+type VpnTrafficCount_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: VpnTrafficCount_HitsSecond
+}
+
+type VpnTrafficCount_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: VpnTrafficCount_Fields
+}
+
+type VpnTrafficCount_Fields {
+  data: VpnTrafficCountData
+  dip: String
+  geo: VpnTrafficCountGeo
+  is_vpn: Boolean
+  ports: VpnTrafficCountPorts
+}
+
+type VpnTrafficCountData {
+  count: Int
+  dip_port: Int
+  protocol: String
+  sip: String
+  time: String
+}
+
+type VpnTrafficCountGeo {
+  accuracy: String
+  areacode: String
+  asnumber: String
+  city: String
+  continent: String
+  country: String
+  district: String
+  isp: String
+  latbd: String
+  latwgs: String
+  lngbd: String
+  lngwgs: String
+  prov: String
+  radius: String
+}
+
+type VpnTrafficCountPorts {
+    port: Int
+    service: String
+}
+
+scalar jsonb
+
+input hasura_index_mappingsAggModel {
+  NormalAgg_First: hasura_index_mappingsAggType
+  NormalAgg_Second: hasura_index_mappingsAggType
+  ObjectAgg_First: hasura_index_mappingsObjectAggType
+  ObjectAgg_Second: hasura_index_mappingsObjectAggType
+  SelfBuildAgg: jsonb
+}
+
+input hasura_index_mappingsAggType {
+  terms: hasura_index_mappingsAggTerms
+  avg: hasura_index_mappingsAggAvg
+  range: hasura_index_mappingsAggRange
+  stats: hasura_index_mappingsAggStats
+  cardinality: hasura_index_mappingsAggCardinality
+  aggs: hasura_index_mappingsAggModel
+}
+
+input hasura_index_mappingsAggTerms {
+  field: hasura_index_mappingsType
+  size: Int
+}
+
+input hasura_index_mappingsAggAvg {
+  field: hasura_index_mappingsNumType!
+}
+
+input hasura_index_mappingsAggRange {
+  field: hasura_index_mappingsType!
+  ranges: [Ranges!]
+}
+
+
+input hasura_index_mappingsAggStats {
+  field: hasura_index_mappingsNumType
+}
+
+input hasura_index_mappingsAggCardinality {
+  field: hasura_index_mappingsType
+}
+
+input hasura_index_mappingsObjectAggType {
+  terms: hasura_index_mappingsObjectAggTerms
+  avg: hasura_index_mappingsObjectAggAvg
+  range: hasura_index_mappingsObjectAggRange
+  stats: hasura_index_mappingsObjectAggStats
+  cardinality: hasura_index_mappingsObjectAggCardinality
+  aggs: hasura_index_mappingsAggModel
+}
+
+input hasura_index_mappingsObjectAggTerms {
+  field: String
+  size: Int
+}
+
+input hasura_index_mappingsObjectAggAvg {
+  field: String
+}
+
+input hasura_index_mappingsObjectAggRange {
+  field: String
+  ranges: [Ranges!]
+}
+
+input hasura_index_mappingsObjectAggStats {
+  field: String
+}
+
+input hasura_index_mappingsObjectAggCardinality {
+  field: String
+}
+
+input hasura_index_mappingsSearchModel {
+  query_string: hasura_index_mappingsQueryString
+  multi_match: hasura_index_mappingsMultiMatch
+  match: hasura_index_mappingsMatch
+  range: hasura_index_mappingsRange
+  bool: hasura_index_mappingsBool
+}
+
+input hasura_index_mappingsMultiMatch {
+  query: String
+  fields: [String!]
+}
+input hasura_index_mappingsQueryString {
+  query: String
+}
+input hasura_index_mappingsBool {
+  should: [hasura_index_mappingsSearchModel!]
+}
+
+input hasura_index_mappings_object_searchModel {
+  query_string: hasura_index_mappingsQueryString
+  multi_match: hasura_index_mappingsMultiMatch
+  match: jsonb
+  range: jsonb
+  bool: hasura_index_mappingsObjectBool
+}
+
+input hasura_index_mappingsObjectBool {
+  should: [hasura_index_mappings_object_searchModel!]
+}
+
+type hasura_index_mappingsOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: hasura_index_mappings_HitsFirst
+  aggregations: jsonb
+}
+
+
+type hasura_index_mappings_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: hasura_index_mappings_HitsSecond
+}
+
+type hasura_index_mappings_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: hasura_index_mappings_fields
+}
+enum hasura_index_mappingsType{
+  index_name
+  mappings
+  all_string_type
+  all_num_type
+}
+enum hasura_index_mappingsNumType{
+  none
+}
+input hasura_index_mappingsMatch{
+  index_name : String
+  mappings : String
+  all_string_type : [String]
+  all_num_type : [String]
+}
+
+input hasura_index_mappingsRange{
+  none:String
+}
+type hasura_index_mappings_fields {
+  index_name : String
+  mappings : String
+  all_string_type : [String]
+  all_num_type : [String]
+}
+
+input squint_certAggModel {
+  NormalAgg_First: squint_certAggType
+  NormalAgg_Second: squint_certAggType
+  ObjectAgg_First: squint_certObjectAggType
+  ObjectAgg_Second: squint_certObjectAggType
+  SelfBuildAgg: jsonb
+}
+
+input squint_certAggType {
+  terms: squint_certAggTerms
+  avg: squint_certAggAvg
+  range: squint_certAggRange
+  stats: squint_certAggStats
+  cardinality: squint_certAggCardinality
+  aggs: squint_certAggModel
+}
+
+input squint_certAggTerms {
+  field: squint_certType
+  size: Int
+}
+
+input squint_certAggAvg {
+  field: squint_certNumType!
+}
+
+input squint_certAggRange {
+  field: squint_certNumType!
+  ranges: [Ranges!]
+}
+
+
+input squint_certAggStats {
+  field: squint_certNumType
+}
+
+input squint_certAggCardinality {
+  field: squint_certType
+}
+
+input squint_certObjectAggType {
+  terms: squint_certObjectAggTerms
+  avg: squint_certObjectAggAvg
+  range: squint_certObjectAggRange
+  stats: squint_certObjectAggStats
+  cardinality: squint_certObjectAggCardinality
+  aggs: squint_certAggModel
+}
+
+input squint_certObjectAggTerms {
+  field: String
+  size: Int
+}
+
+input squint_certObjectAggAvg {
+  field: String
+}
+
+input squint_certObjectAggRange {
+  field: String
+  ranges: [Ranges!]
+}
+
+input squint_certObjectAggStats {
+  field: String
+}
+
+input squint_certObjectAggCardinality {
+  field: String
+}
+
+input squint_certSearchModel {
+  query_string: squint_certQueryString
+  multi_match: squint_certMultiMatch
+  match: squint_certMatch
+  range: squint_certRange
+  bool: squint_certBool
+}
+
+input squint_certMultiMatch {
+  query: String
+  fields: [String!]
+}
+input squint_certQueryString {
+  query: String
+}
+input squint_certBool {
+  should: [squint_certSearchModel!]
+}
+
+input squint_cert_object_searchModel {
+  query_string: squint_certQueryString
+  multi_match: squint_certMultiMatch
+  match: jsonb
+  range: jsonb
+  bool: squint_certObjectBool
+}
+
+input squint_certObjectBool {
+  should: [squint_cert_object_searchModel!]
+}
+
+type squint_certOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: squint_cert_HitsFirst
+  aggregations: jsonb
+}
+
+
+type squint_cert_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: squint_cert_HitsSecond
+}
+
+type squint_cert_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: squint_cert_fields
+}
+enum squint_certType{
+  parse_status
+  cert
+  fingerprint_md5
+  fingerprint_sha1
+  fingerprint_sha256
+  issuer_dn
+  names
+  parsed_timestamp
+  parser_version
+  raw
+  redacted
+  serial_number
+  spki_subject_fingerprint
+  subject_dn
+  tags
+  tbs_fingerprint
+  tbs_noct_fingerprint
+  validation_level
+  version
+}
+enum squint_certNumType{
+  parse_status
+}
+input squint_certMatch{
+  parse_status : Int
+  cert : String
+  fingerprint_md5 : String
+  fingerprint_sha1 : String
+  fingerprint_sha256 : String
+  issuer_dn : String
+  names : String
+  parsed_timestamp : String
+  parser_version : String
+  raw : String
+  redacted : String
+  serial_number : String
+  spki_subject_fingerprint : String
+  subject_dn : String
+  tags : String
+  tbs_fingerprint : String
+  tbs_noct_fingerprint : String
+  validation_level : String
+  version : String
+}
+input squint_certRange{
+  parse_status : Int
+}
+input squint_certSort{
+  parse_status : [order_type]
+  cert : [order_type]
+  fingerprint_md5 : [order_type]
+  fingerprint_sha1 : [order_type]
+  fingerprint_sha256 : [order_type]
+  issuer_dn : [order_type]
+  names : [order_type]
+  parsed_timestamp : [order_type]
+  parser_version : [order_type]
+  raw : [order_type]
+  redacted : [order_type]
+  serial_number : [order_type]
+  spki_subject_fingerprint : [order_type]
+  subject_dn : [order_type]
+  tags : [order_type]
+  tbs_fingerprint : [order_type]
+  tbs_noct_fingerprint : [order_type]
+  validation_level : [order_type]
+  version : [order_type]
+}
+
+type squint_cert_extensions_authority_info_access_fields {
+  issuer_urls : String
+  ocsp_urls : String
+}
+type squint_cert_extensions_basic_constraints_fields {
+  is_ca : String
+  max_path_len : String
+}
+type squint_cert_extensions_certificate_policies_user_notice_notice_reference_fields {
+  notice_numbers : String
+  organization : String
+}
+type squint_cert_extensions_certificate_policies_user_notice_fields {
+  explicit_text : String
+  notice_reference : squint_cert_extensions_certificate_policies_user_notice_notice_reference_fields
+}
+type squint_cert_extensions_certificate_policies_fields {
+  cps : String
+  id : String
+  user_notice : squint_cert_extensions_certificate_policies_user_notice_fields
+}
+type squint_cert_extensions_extended_key_usage_fields {
+  any : String
+  client_auth : String
+  code_signing : String
+  email_protection : String
+  ipsec_end_system : String
+  ipsec_intermediate_system_usage : String
+  ipsec_tunnel : String
+  ipsec_user : String
+  microsoft_cert_trust_list_signing : String
+  microsoft_encrypted_file_system : String
+  microsoft_server_gated_crypto : String
+  netscape_server_gated_crypto : String
+  ocsp_signing : String
+  server_auth : String
+  time_stamping : String
+  unknown : String
+}
+type squint_cert_extensions_issuer_alt_name_fields {
+  email_addresses : String
+  uniform_resource_identifiers : String
+}
+type squint_cert_extensions_key_usage_fields {
+  certificate_sign : String
+  content_commitment : String
+  crl_sign : String
+  data_encipherment : String
+  digital_signature : String
+  key_agreement : String
+  key_encipherment : String
+  value : String
+}
+type squint_cert_extensions_signed_certificate_timestamps_fields {
+  log_id : String
+  signature : String
+  timestamp : String
+  version : String
+}
+type squint_cert_extensions_subject_alt_name_other_names_fields {
+  id : String
+  value : String
+}
+type squint_cert_extensions_subject_alt_name_fields {
+  dns_names : String
+  email_addresses : String
+  ip_addresses : String
+  other_names : squint_cert_extensions_subject_alt_name_other_names_fields
+  uniform_resource_identifiers : String
+}
+type squint_cert_extensions_fields {
+  authority_info_access : squint_cert_extensions_authority_info_access_fields
+  authority_key_id : String
+  basic_constraints : squint_cert_extensions_basic_constraints_fields
+  certificate_policies : squint_cert_extensions_certificate_policies_fields
+  crl_distribution_points : String
+  extended_key_usage : squint_cert_extensions_extended_key_usage_fields
+  issuer_alt_name : squint_cert_extensions_issuer_alt_name_fields
+  key_usage : squint_cert_extensions_key_usage_fields
+  signed_certificate_timestamps : squint_cert_extensions_signed_certificate_timestamps_fields
+  subject_alt_name : squint_cert_extensions_subject_alt_name_fields
+  subject_key_id : String
+}
+type squint_cert_issuer_fields {
+  common_name : String
+  country : String
+  domain_component : String
+  email_address : String
+  given_name : String
+  locality : String
+  organization : String
+  organizational_unit : String
+  postal_code : String
+  province : String
+  serial_number : String
+  street_address : String
+  surname : String
+}
+type squint_cert_signature_signature_algorithm_fields {
+  name : String
+  oid : String
+}
+type squint_cert_signature_fields {
+  self_signed : String
+  signature_algorithm : squint_cert_signature_signature_algorithm_fields
+  valid : String
+  value : String
+}
+type squint_cert_signature_algorithm_fields {
+  name : String
+  oid : String
+}
+type squint_cert_subject_fields {
+  common_name : String
+  country : String
+  domain_component : String
+  email_address : String
+  given_name : String
+  jurisdiction_country : String
+  jurisdiction_locality : String
+  jurisdiction_province : String
+  locality : String
+  organization : String
+  organizational_unit : String
+  postal_code : String
+  province : String
+  serial_number : String
+  street_address : String
+  surname : String
+}
+type squint_cert_subject_key_info_ecdsa_public_key_fields {
+  b : String
+  curve : String
+  gx : String
+  gy : String
+  length : String
+  n : String
+  p : String
+  pub : String
+  x : String
+  y : String
+}
+type squint_cert_subject_key_info_key_algorithm_fields {
+  name : String
+}
+type squint_cert_subject_key_info_rsa_public_key_fields {
+  exponent : String
+  length : String
+  modulus : String
+}
+type squint_cert_subject_key_info_fields {
+  ecdsa_public_key : squint_cert_subject_key_info_ecdsa_public_key_fields
+  fingerprint_sha256 : String
+  key_algorithm : squint_cert_subject_key_info_key_algorithm_fields
+  rsa_public_key : squint_cert_subject_key_info_rsa_public_key_fields
+}
+type squint_cert_unknown_extensions_fields {
+  critical : String
+  id : String
+  value : String
+}
+type squint_cert_validity_fields {
+  end : String
+  length : String
+  start : String
+}
+type squint_cert_fields {
+  cert : String
+  extensions : squint_cert_extensions_fields
+  fingerprint_md5 : String
+  fingerprint_sha1 : String
+  fingerprint_sha256 : String
+  issuer : squint_cert_issuer_fields
+  issuer_dn : String
+  names : String
+  parse_status : Int
+  parsed_timestamp : String
+  parser_version : String
+  raw : String
+  redacted : String
+  serial_number : String
+  signature : squint_cert_signature_fields
+  signature_algorithm : squint_cert_signature_algorithm_fields
+  spki_subject_fingerprint : String
+  subject : squint_cert_subject_fields
+  subject_dn : String
+  subject_key_info : squint_cert_subject_key_info_fields
+  tags : String
+  tbs_fingerprint : String
+  tbs_noct_fingerprint : String
+  unknown_extensions : squint_cert_unknown_extensions_fields
+  validation_level : String
+  validity : squint_cert_validity_fields
+  version : String
+}
+
+input squint_ipAggModel {
+  NormalAgg_First: squint_ipAggType
+  NormalAgg_Second: squint_ipAggType
+  ObjectAgg_First: squint_ipObjectAggType
+  ObjectAgg_Second: squint_ipObjectAggType
+  SelfBuildAgg: jsonb
+}
+
+input squint_ipAggType {
+  terms: squint_ipAggTerms
+  avg: squint_ipAggAvg
+  range: squint_ipAggRange
+  stats: squint_ipAggStats
+  cardinality: squint_ipAggCardinality
+  aggs: squint_ipAggModel
+}
+
+input squint_ipAggTerms {
+  field: squint_ipType
+  size: Int
+}
+
+input squint_ipAggAvg {
+  field: squint_ipNumType!
+}
+
+input squint_ipAggRange {
+  field: squint_ipNumType!
+  ranges: [Ranges!]
+}
+
+
+input squint_ipAggStats {
+  field: squint_ipNumType
+}
+
+input squint_ipAggCardinality {
+  field: squint_ipType
+}
+
+input squint_ipObjectAggType {
+  terms: squint_ipObjectAggTerms
+  avg: squint_ipObjectAggAvg
+  range: squint_ipObjectAggRange
+  stats: squint_ipObjectAggStats
+  cardinality: squint_ipObjectAggCardinality
+  aggs: squint_ipAggModel
+}
+
+input squint_ipObjectAggTerms {
+  field: String
+  size: Int
+}
+
+input squint_ipObjectAggAvg {
+  field: String
+}
+
+input squint_ipObjectAggRange {
+  field: String
+  ranges: [Ranges!]
+}
+
+input squint_ipObjectAggStats {
+  field: String
+}
+
+input squint_ipObjectAggCardinality {
+  field: String
+}
+
+input squint_ipSearchModel {
+  query_string: squint_ipQueryString
+  multi_match: squint_ipMultiMatch
+  match: squint_ipMatch
+  range: squint_ipRange
+  bool: squint_ipBool
+}
+
+input squint_ipMultiMatch {
+  query: String
+  fields: [String!]
+}
+input squint_ipQueryString {
+  query: String
+}
+input squint_ipBool {
+  should: [squint_ipSearchModel!]
+}
+
+input squint_ip_object_searchModel {
+  query_string: squint_ipQueryString
+  multi_match: squint_ipMultiMatch
+  match: jsonb
+  range: jsonb
+  bool: squint_ipObjectBool
+}
+
+input squint_ipObjectBool {
+  should: [squint_ip_object_searchModel!]
+}
+
+type squint_ipOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: squint_ip_HitsFirst
+  aggregations: jsonb
+}
+
+
+type squint_ip_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: squint_ip_HitsSecond
+}
+
+type squint_ip_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: squint_ip_fields
+}
+enum squint_ipType{
+  ip
+  port_amount
+  ports
+  cert_hash
+  create_timestamp
+  router
+  router_cluster
+  tags
+  update_timestamp
+}
+enum squint_ipNumType{
+  ip
+  port_amount
+  ports
+}
+input squint_ipMatch{
+  ip : String
+  port_amount : Int
+  ports : Int
+  cert_hash : String
+  create_timestamp : String
+  router : String
+  router_cluster : String
+  tags : String
+  update_timestamp : String
+}
+input squint_ipRange{
+  ip : String
+  port_amount : Int
+  ports : Int
+}
+input squint_ipSort{
+  ip : [order_type]
+  port_amount : [order_type]
+  ports : [order_type]
+  cert_hash : [order_type]
+  create_timestamp : [order_type]
+  router : [order_type]
+  router_cluster : [order_type]
+  tags : [order_type]
+  update_timestamp : [order_type]
+}
+type squint_ip_dns_fields {
+  type : String
+  version : String
+}
+type squint_ip_domains_fields {
+  ptr : String
+  reverse_domains : String
+}
+type squint_ip_geo_fields {
+  accuracy : String
+  areacode : String
+  asnumber : String
+  city : String
+  continent : String
+  country : String
+  district : String
+  isp : String
+  latbd : Float
+  latwgs : Float
+  lngbd : Float
+  lngwgs : Float
+  prov : String
+  radius : String
+}
+type squint_ip_protocols_data_auth_fields {
+  password : String
+  path : String
+  username : String
+}
+type squint_ip_protocols_data_build_info_fields {
+  arch : String
+  os : String
+  version : String
+}
+type squint_ip_protocols_data_headers_fields {
+  key : String
+  value : String
+}
+type squint_ip_protocols_data_fields {
+  auth : squint_ip_protocols_data_auth_fields
+  auth_method : String
+  auth_plugin_name : String
+  banner : String
+  bearer_capabilities : String
+  bgp_id : String
+  blue_keep_vulnerable : String
+  brute_success : String
+  build_info : squint_ip_protocols_data_build_info_fields
+  cert_hash : String
+  character_set : String
+  copyright : String
+  cpu_profile : String
+  encrypt_mode : String
+  error_code : String
+  error_message : String
+  firmware_revision : String
+  framing_capabilities : String
+  hardware : String
+  headers : squint_ip_protocols_data_headers_fields
+  hold_time : String
+  hostname : String
+  info_response : String
+  is_master : String
+  is_s7 : String
+  maximum_channels : String
+  mode : String
+  module : String
+  module_id : String
+  module_type : String
+  my_as : String
+  node_count : String
+  opt_param_len : String
+  option_status_code : String
+  password : String
+  ping_response : String
+  protocol_version : String
+  reserved_for_os : String
+  serial_number : String
+  server : String
+  server_version : String
+  status_code : String
+  support_methods : String
+  system : String
+  tcp_support : String
+  title : String
+  topics : String
+  type : String
+  udp_support : String
+  user_auth_method : String
+  vendor_name : String
+  version : String
+  weak : String
+}
+type squint_ip_protocols_fields {
+  collected_timestamp : String
+  data : squint_ip_protocols_data_fields
+  port : Int
+  protocol : String
+}
+type squint_ip_fields {
+  cert_hash : String
+  create_timestamp : String
+  dns : squint_ip_dns_fields
+  domains : squint_ip_domains_fields
+  geo : squint_ip_geo_fields
+  ip : String
+  port_amount : Int
+  ports : Int
+  protocols : squint_ip_protocols_fields
+  router : String
+  router_cluster : String
+  tags : String
+  update_timestamp : String
+}
+
+input squint_organizationAggModel {
+  NormalAgg_First: squint_organizationAggType
+  NormalAgg_Second: squint_organizationAggType
+  ObjectAgg_First: squint_organizationObjectAggType
+  ObjectAgg_Second: squint_organizationObjectAggType
+  SelfBuildAgg: jsonb
+}
+
+input squint_organizationAggType {
+  terms: squint_organizationAggTerms
+  avg: squint_organizationAggAvg
+  range: squint_organizationAggRange
+  stats: squint_organizationAggStats
+  cardinality: squint_organizationAggCardinality
+  aggs: squint_organizationAggModel
+}
+
+input squint_organizationAggTerms {
+  field: squint_organizationType
+  size: Int
+}
+
+input squint_organizationAggAvg {
+  field: squint_organizationNumType!
+}
+
+input squint_organizationAggRange {
+  field: squint_organizationNumType!
+  ranges: [Ranges!]
+}
+
+
+input squint_organizationAggStats {
+  field: squint_organizationNumType
+}
+
+input squint_organizationAggCardinality {
+  field: squint_organizationType
+}
+
+input squint_organizationObjectAggType {
+  terms: squint_organizationObjectAggTerms
+  avg: squint_organizationObjectAggAvg
+  range: squint_organizationObjectAggRange
+  stats: squint_organizationObjectAggStats
+  cardinality: squint_organizationObjectAggCardinality
+  aggs: squint_organizationAggModel
+}
+
+input squint_organizationObjectAggTerms {
+  field: String
+  size: Int
+}
+
+input squint_organizationObjectAggAvg {
+  field: String
+}
+
+input squint_organizationObjectAggRange {
+  field: String
+  ranges: [Ranges!]
+}
+
+input squint_organizationObjectAggStats {
+  field: String
+}
+
+input squint_organizationObjectAggCardinality {
+  field: String
+}
+
+input squint_organizationSearchModel {
+  query_string: squint_organizationQueryString
+  multi_match: squint_organizationMultiMatch
+  match: squint_organizationMatch
+  range: squint_organizationRange
+  bool: squint_organizationBool
+}
+
+input squint_organizationMultiMatch {
+  query: String
+  fields: [String!]
+}
+input squint_organizationQueryString {
+  query: String
+}
+input squint_organizationBool {
+  should: [squint_organizationSearchModel!]
+}
+
+input squint_organization_object_searchModel {
+  query_string: squint_organizationQueryString
+  multi_match: squint_organizationMultiMatch
+  match: jsonb
+  range: jsonb
+  bool: squint_organizationObjectBool
+}
+
+input squint_organizationObjectBool {
+  should: [squint_organization_object_searchModel!]
+}
+
+type squint_organizationOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: squint_organization_HitsFirst
+  aggregations: jsonb
+}
+
+
+type squint_organization_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: squint_organization_HitsSecond
+}
+
+type squint_organization_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: squint_organization_fields
+}
+enum squint_organizationType{
+  create_timestamp
+  domains
+  organization
+  tags
+  update_timestamp
+}
+enum squint_organizationNumType{
+  none
+}
+input squint_organizationMatch{
+  create_timestamp : String
+  domains : String
+  organization : String
+  tags : String
+  update_timestamp : String
+}
+input squint_organizationSort{
+  create_timestamp : [order_type]
+  domains : [order_type]
+  organization : [order_type]
+  tags : [order_type]
+  update_timestamp : [order_type]
+}
+input squint_organizationRange{
+  none:String
+}
+type squint_organization_info_fields {
+  approval_date : String
+  business_period : String
+  business_range : String
+  business_status : String
+  city : String
+  create_date : String
+  district : String
+  email : String
+  industry : String
+  insured_number : String
+  latest_report_address : String
+  legal_person : String
+  name : String
+  organization_id : String
+  other_email : String
+  other_phone : String
+  paid_up_capital : String
+  phone : String
+  previous_name : String
+  province : String
+  registered_capital : String
+  registration_address : String
+  registration_number : String
+  taxpayer_identification_number : String
+  type : String
+  uniform_social_credit_code : String
+  website_url : String
+}
+type squint_organization_fields {
+  create_timestamp : String
+  domains : String
+  info : squint_organization_info_fields
+  organization : String
+  tags : String
+  update_timestamp : String
+}
+
+input squint_domainAggModel {
+  NormalAgg_First: squint_domainAggType
+  NormalAgg_Second: squint_domainAggType
+  ObjectAgg_First: squint_domainObjectAggType
+  ObjectAgg_Second: squint_domainObjectAggType
+  SelfBuildAgg: jsonb
+}
+
+input squint_domainAggType {
+  terms: squint_domainAggTerms
+  avg: squint_domainAggAvg
+  range: squint_domainAggRange
+  stats: squint_domainAggStats
+  cardinality: squint_domainAggCardinality
+  aggs: squint_domainAggModel
+}
+
+input squint_domainAggTerms {
+  field: squint_domainType
+  size: Int
+}
+
+input squint_domainAggAvg {
+  field: squint_domainNumType!
+}
+
+input squint_domainAggRange {
+  field: squint_domainNumType!
+  ranges: [Ranges!]
+}
+
+
+input squint_domainAggStats {
+  field: squint_domainNumType
+}
+
+input squint_domainAggCardinality {
+  field: squint_domainType
+}
+
+input squint_domainObjectAggType {
+  terms: squint_domainObjectAggTerms
+  avg: squint_domainObjectAggAvg
+  range: squint_domainObjectAggRange
+  stats: squint_domainObjectAggStats
+  cardinality: squint_domainObjectAggCardinality
+  aggs: squint_domainAggModel
+}
+
+input squint_domainObjectAggTerms {
+  field: String
+  size: Int
+}
+
+input squint_domainObjectAggAvg {
+  field: String
+}
+
+input squint_domainObjectAggRange {
+  field: String
+  ranges: [Ranges!]
+}
+
+input squint_domainObjectAggStats {
+  field: String
+}
+
+input squint_domainObjectAggCardinality {
+  field: String
+}
+
+input squint_domainSearchModel {
+  query_string: squint_domainQueryString
+  multi_match: squint_domainMultiMatch
+  match: squint_domainMatch
+  range: squint_domainRange
+  bool: squint_domainBool
+}
+
+input squint_domainMultiMatch {
+  query: String
+  fields: [String!]
+}
+input squint_domainQueryString {
+  query: String
+}
+input squint_domainBool {
+  should: [squint_domainSearchModel!]
+}
+
+input squint_domain_object_searchModel {
+  query_string: squint_domainQueryString
+  multi_match: squint_domainMultiMatch
+  match: jsonb
+  range: jsonb
+  bool: squint_domainObjectBool
+}
+
+input squint_domainObjectBool {
+  should: [squint_domain_object_searchModel!]
+}
+
+type squint_domainOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: squint_domain_HitsFirst
+  aggregations: jsonb
+}
+
+
+type squint_domain_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: squint_domain_HitsSecond
+}
+
+type squint_domain_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: squint_domain_fields
+}
+enum squint_domainType{
+  create_timestamp
+  domains
+  organization
+  tags
+  update_timestamp
+  cert_hash
+  domain
+  main_domain
+  subdomains
+}
+enum squint_domainNumType{
+  none
+}
+input squint_domainMatch{
+  create_timestamp : String
+  domains : String
+  organization : String
+  tags : String
+  update_timestamp : String
+  cert_hash : String
+  domain : String
+  main_domain : String
+  subdomains : String
+}
+input squint_domainRange{
+  none:String
+}
+input squint_domainSort{
+  create_timestamp : [order_type]
+  domains : [order_type]
+  organization : [order_type]
+  tags : [order_type]
+  update_timestamp : [order_type]
+  cert_hash : [order_type]
+  domain : [order_type]
+  main_domain : [order_type]
+  subdomains : [order_type]
+}
+type squint_domain_icp_fields {
+  collected_timestamp : String
+  domain_id : String
+  home_url : String
+  leader_name : String
+  limit_access : String
+  main_id : String
+  main_licence : String
+  service_id : String
+  service_licence : String
+  service_name : String
+  unit_name : String
+  unit_type : String
+  update_record_time : String
+}
+type squint_domain_psr_fields {
+  collected_timestamp : String
+  record_bureau : String
+  record_id : String
+  record_time : String
+  unit_name : String
+  unit_type : String
+  website_main_domain : String
+  website_name : String
+  website_second_domain : String
+  website_type : String
+}
+type squint_domain_rr_A_fields {
+  accuracy : String
+  areacode : String
+  asnumber : String
+  city : String
+  continent : String
+  country : String
+  district : String
+  ip : String
+  isp : String
+  latbd : Float
+  latwgs : Float
+  lngbd : Float
+  lngwgs : Float
+  prov : String
+  radius : String
+}
+type squint_domain_rr_fields {
+  A : squint_domain_rr_A_fields
+  AAAA : String
+  CNAME : String
+  MX : String
+  NS : String
+  TXT : String
+}
+type squint_domain_snapshot_classification_fields {
+  probability : Float
+  type : String
+}
+type squint_domain_snapshot_meta_fields {
+  classifier_version : String
+  location : String
+  snapshot_version : String
+}
+type squint_domain_snapshot_request_fields {
+  domain : String
+  main_domain : String
+  request_url : String
+  scheme : String
+}
+type squint_domain_snapshot_response_favicon_fields {
+  img_url : String
+  md5 : String
+}
+type squint_domain_snapshot_response_frame_child_frames_child_frames_child_frames_child_frames_child_frames_fields {
+  frame_url : String
+  html_url : String
+  text_content_url : String
+}
+type squint_domain_snapshot_response_frame_child_frames_child_frames_child_frames_child_frames_fields {
+  child_frames : squint_domain_snapshot_response_frame_child_frames_child_frames_child_frames_child_frames_child_frames_fields
+  frame_url : String
+  html_url : String
+  text_content_url : String
+}
+type squint_domain_snapshot_response_frame_child_frames_child_frames_child_frames_fields {
+  child_frames : squint_domain_snapshot_response_frame_child_frames_child_frames_child_frames_child_frames_fields
+  frame_url : String
+  html_url : String
+  text_content_url : String
+}
+type squint_domain_snapshot_response_frame_child_frames_child_frames_fields {
+  child_frames : squint_domain_snapshot_response_frame_child_frames_child_frames_child_frames_fields
+  frame_url : String
+  html_url : String
+  text_content_url : String
+}
+type squint_domain_snapshot_response_frame_child_frames_fields {
+  child_frames : squint_domain_snapshot_response_frame_child_frames_child_frames_fields
+  frame_url : String
+  html_url : String
+  text_content_url : String
+}
+type squint_domain_snapshot_response_frame_fields {
+  child_frames : squint_domain_snapshot_response_frame_child_frames_fields
+  description : String
+  frame_url : String
+  html_url : String
+  icp : String
+  keywords : String
+  text_content_url : String
+  title : String
+}
+type squint_domain_snapshot_response_remote_address_fields {
+  accuracy : String
+  areacode : String
+  asnumber : String
+  city : String
+  continent : String
+  country : String
+  district : String
+  ip : String
+  isp : String
+  latbd : String
+  latwgs : String
+  lngbd : String
+  lngwgs : String
+  port : Int
+  prov : String
+  radius : String
+}
+type squint_domain_snapshot_response_fields {
+  cert_hash : String
+  external_urls : String
+  favicon : squint_domain_snapshot_response_favicon_fields
+  frame : squint_domain_snapshot_response_frame_fields
+  remote_address : squint_domain_snapshot_response_remote_address_fields
+  response_url : String
+  snapshot_url : String
+}
+type squint_domain_snapshot_fields {
+  classification : squint_domain_snapshot_classification_fields
+  collected_timestamp : String
+  meta : squint_domain_snapshot_meta_fields
+  request : squint_domain_snapshot_request_fields
+  response : squint_domain_snapshot_response_fields
+}
+type squint_domain_web_http_headers_fields {
+  key : String
+  value : String
+}
+type squint_domain_web_http_fields {
+  body : String
+  cert_hash : String
+  description : String
+  headers : squint_domain_web_http_headers_fields
+  keywords : String
+  server : String
+  status_code : Int
+  title : String
+  url : String
+}
+type squint_domain_web_https_headers_fields {
+  key : String
+  value : String
+}
+type squint_domain_web_https_fields {
+  cert_hash : String
+  description : String
+  headers : squint_domain_web_https_headers_fields
+  keywords : String
+  server : String
+  status_code : Int
+  title : String
+  url : String
+}
+type squint_domain_web_fields {
+  http : squint_domain_web_http_fields
+  https : squint_domain_web_https_fields
+}
+type squint_domain_whois_administrator_fields {
+  city : String
+  country : String
+  email : String
+  fax : String
+  fax_extension : String
+  id : String
+  name : String
+  organization : String
+  phone : String
+  phone_extension : String
+  postal_code : String
+  province : String
+  street : String
+}
+type squint_domain_whois_billing_fields {
+  city : String
+  country : String
+  email : String
+  fax : String
+  fax_extension : String
+  id : String
+  name : String
+  organization : String
+  phone : String
+  phone_extension : String
+  postal_code : String
+  province : String
+  street : String
+}
+type squint_domain_whois_domain_info_fields {
+  dns_sec : String
+  name : String
+  name_servers : String
+  status : String
+}
+type squint_domain_whois_registrant_fields {
+  city : String
+  country : String
+  email : String
+  fax : String
+  fax_extension : String
+  id : String
+  name : String
+  organization : String
+  phone : String
+  phone_extension : String
+  postal_code : String
+  province : String
+  street : String
+}
+type squint_domain_whois_registrar_fields {
+  email : String
+  iana_id : String
+  name : String
+  phone : String
+  website : String
+  whois_servers : String
+}
+type squint_domain_whois_registry_fields {
+  creation_time : String
+  domain_id : String
+  expiration_time : String
+  updated_time : String
+}
+type squint_domain_whois_technician_fields {
+  city : String
+  country : String
+  email : String
+  fax : String
+  fax_extension : String
+  id : String
+  name : String
+  organization : String
+  phone : String
+  phone_extension : String
+  postal_code : String
+  province : String
+  street : String
+}
+type squint_domain_whois_fields {
+  administrator : squint_domain_whois_administrator_fields
+  billing : squint_domain_whois_billing_fields
+  collected_timestamp : String
+  domain_info : squint_domain_whois_domain_info_fields
+  registrant : squint_domain_whois_registrant_fields
+  registrar : squint_domain_whois_registrar_fields
+  registry : squint_domain_whois_registry_fields
+  technician : squint_domain_whois_technician_fields
+}
+type squint_domain_fields {
+  cert_hash : String
+  create_timestamp : String
+  domain : String
+  icp : squint_domain_icp_fields
+  main_domain : String
+  psr : squint_domain_psr_fields
+  rr : squint_domain_rr_fields
+  snapshot : squint_domain_snapshot_fields
+  subdomains : String
+  tags : String
+  update_timestamp : String
+  web : squint_domain_web_fields
+  whois : squint_domain_whois_fields
+}
+
+input squint_routeAggModel {
+  NormalAgg_First: squint_routeAggType
+  NormalAgg_Second: squint_routeAggType
+  ObjectAgg_First: squint_routeObjectAggType
+  ObjectAgg_Second: squint_routeObjectAggType
+  SelfBuildAgg: jsonb
+}
+
+input squint_routeAggType {
+  terms: squint_routeAggTerms
+  avg: squint_routeAggAvg
+  range: squint_routeAggRange
+  stats: squint_routeAggStats
+  cardinality: squint_routeAggCardinality
+  aggs: squint_routeAggModel
+}
+
+input squint_routeAggTerms {
+  field: squint_routeType
+  size: Int
+}
+
+input squint_routeAggAvg {
+  field: squint_routeNumType!
+}
+
+input squint_routeAggRange {
+  field: squint_routeNumType!
+  ranges: [Ranges!]
+}
+
+
+input squint_routeAggStats {
+  field: squint_routeNumType
+}
+
+input squint_routeAggCardinality {
+  field: squint_routeType
+}
+
+input squint_routeObjectAggType {
+  terms: squint_routeObjectAggTerms
+  avg: squint_routeObjectAggAvg
+  range: squint_routeObjectAggRange
+  stats: squint_routeObjectAggStats
+  cardinality: squint_routeObjectAggCardinality
+  aggs: squint_routeAggModel
+}
+
+input squint_routeObjectAggTerms {
+  field: String
+  size: Int
+}
+
+input squint_routeObjectAggAvg {
+  field: String
+}
+
+input squint_routeObjectAggRange {
+  field: String
+  ranges: [Ranges!]
+}
+
+input squint_routeObjectAggStats {
+  field: String
+}
+
+input squint_routeObjectAggCardinality {
+  field: String
+}
+
+input squint_routeSearchModel {
+  query_string: squint_routeQueryString
+  multi_match: squint_routeMultiMatch
+  match: squint_routeMatch
+  range: squint_routeRange
+  bool: squint_routeBool
+}
+
+input squint_routeMultiMatch {
+  query: String
+  fields: [String!]
+}
+input squint_routeQueryString {
+  query: String
+}
+input squint_routeBool {
+  should: [squint_routeSearchModel!]
+}
+
+input squint_route_object_searchModel {
+  query_string: squint_routeQueryString
+  multi_match: squint_routeMultiMatch
+  match: jsonb
+  range: jsonb
+  bool: squint_routeObjectBool
+}
+
+input squint_routeObjectBool {
+  should: [squint_route_object_searchModel!]
+}
+
+type squint_routeOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: squint_route_HitsFirst
+  aggregations: jsonb
+}
+
+
+type squint_route_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: squint_route_HitsSecond
+}
+
+type squint_route_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: squint_route_fields
+}
+enum squint_routeType{
+  available
+  create_timestamp
+  important
+  ip
+  is_router
+  nodes
+  tags 
+  update_timestamp
+}
+enum squint_routeNumType{
+  create_timestamp
+  ip
+  update_timestamp
+}
+input squint_routeMatch{
+  available : String
+  create_timestamp : String
+  important : String
+  ip : String
+  is_router : String
+  nodes : String
+  tags : String
+  update_timestamp : String
+}
+input squint_routeSort{
+  available : [order_type]
+  create_timestamp : [order_type]
+  important : [order_type]
+  ip : [order_type]
+  is_router : [order_type]
+  nodes : [order_type]
+  tags : [order_type]
+  update_timestamp : [order_type]
+}
+input squint_routeRange{
+  create_timestamp : String
+  ip : String
+  update_timestamp : String
+}
+type squint_route_geo_fields {
+  accuracy : String
+  areacode : String
+  asnumber : String
+  city : String
+  continent : String
+  country : String
+  district : String
+  isp : String
+  latbd : Float
+  latwgs : Float
+  lngbd : Float
+  lngwgs : Float
+  prov : String
+  radius : String
+}
+type squint_route_fields {
+  available : String
+  create_timestamp : String
+  geo : squint_route_geo_fields
+  important : String
+  ip : String
+  is_router : String
+  nodes : String
+  tags : String
+  update_timestamp : String
+}
+
+input squint_trend_daily_active_ipAggModel {
+  NormalAgg_First: squint_trend_daily_active_ipAggType
+  NormalAgg_Second: squint_trend_daily_active_ipAggType
+  ObjectAgg_First: squint_trend_daily_active_ipObjectAggType
+  ObjectAgg_Second: squint_trend_daily_active_ipObjectAggType
+  SelfBuildAgg: jsonb
+}
+
+input squint_trend_daily_active_ipAggType {
+  terms: squint_trend_daily_active_ipAggTerms
+  avg: squint_trend_daily_active_ipAggAvg
+  range: squint_trend_daily_active_ipAggRange
+  stats: squint_trend_daily_active_ipAggStats
+  cardinality: squint_trend_daily_active_ipAggCardinality
+  aggs: squint_trend_daily_active_ipAggModel
+}
+
+input squint_trend_daily_active_ipAggTerms {
+  field: squint_trend_daily_active_ipType
+  size: Int
+}
+
+input squint_trend_daily_active_ipAggAvg {
+  field: squint_trend_daily_active_ipNumType!
+}
+
+input squint_trend_daily_active_ipAggRange {
+  field: squint_trend_daily_active_ipNumType!
+  ranges: [Ranges!]
+}
+
+
+input squint_trend_daily_active_ipAggStats {
+  field: squint_trend_daily_active_ipNumType
+}
+
+input squint_trend_daily_active_ipAggCardinality {
+  field: squint_trend_daily_active_ipType
+}
+
+input squint_trend_daily_active_ipObjectAggType {
+  terms: squint_trend_daily_active_ipObjectAggTerms
+  avg: squint_trend_daily_active_ipObjectAggAvg
+  range: squint_trend_daily_active_ipObjectAggRange
+  stats: squint_trend_daily_active_ipObjectAggStats
+  cardinality: squint_trend_daily_active_ipObjectAggCardinality
+  aggs: squint_trend_daily_active_ipAggModel
+}
+
+input squint_trend_daily_active_ipObjectAggTerms {
+  field: String
+  size: Int
+}
+
+input squint_trend_daily_active_ipObjectAggAvg {
+  field: String
+}
+
+input squint_trend_daily_active_ipObjectAggRange {
+  field: String
+  ranges: [Ranges!]
+}
+
+input squint_trend_daily_active_ipObjectAggStats {
+  field: String
+}
+
+input squint_trend_daily_active_ipObjectAggCardinality {
+  field: String
+}
+
+input squint_trend_daily_active_ipSearchModel {
+  query_string: squint_trend_daily_active_ipQueryString
+  multi_match: squint_trend_daily_active_ipMultiMatch
+  match: squint_trend_daily_active_ipMatch
+  range: squint_trend_daily_active_ipRange
+  bool: squint_trend_daily_active_ipBool
+}
+
+input squint_trend_daily_active_ipMultiMatch {
+  query: String
+  fields: [String!]
+}
+input squint_trend_daily_active_ipQueryString {
+  query: String
+}
+input squint_trend_daily_active_ipBool {
+  should: [squint_trend_daily_active_ipSearchModel!]
+}
+
+input squint_trend_daily_active_ip_object_searchModel {
+  query_string: squint_trend_daily_active_ipQueryString
+  multi_match: squint_trend_daily_active_ipMultiMatch
+  match: jsonb
+  range: jsonb
+  bool: squint_trend_daily_active_ipObjectBool
+}
+
+input squint_trend_daily_active_ipObjectBool {
+  should: [squint_trend_daily_active_ip_object_searchModel!]
+}
+
+type squint_trend_daily_active_ipOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: squint_trend_daily_active_ip_HitsFirst
+  aggregations: jsonb
+}
+
+
+type squint_trend_daily_active_ip_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: squint_trend_daily_active_ip_HitsSecond
+}
+
+type squint_trend_daily_active_ip_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: squint_trend_daily_active_ip_fields
+}
+enum squint_trend_daily_active_ipType{
+  datetime
+  service
+  total
+  web_service
+}
+enum squint_trend_daily_active_ipNumType{
+  datetime
+  service
+  total
+  web_service
+}
+input squint_trend_daily_active_ipMatch{
+  datetime : String
+  service : Int
+  total : Int
+  web_service : Int
+}
+input squint_trend_daily_active_ipSort{
+  datetime:[order_type]
+  service:[order_type]
+  total:[order_type]
+  web_service:[order_type]
+}
+input squint_trend_daily_active_ipRange{
+  datetime : String
+  service : Int
+  total : Int
+  web_service : Int}
+type squint_trend_daily_active_ip_fields {
+  datetime : String
+  service : Int
+  total : Int
+  web_service : Int
+}
+
+input squint_trend_daily_assetAggModel {
+  NormalAgg_First: squint_trend_daily_assetAggType
+  NormalAgg_Second: squint_trend_daily_assetAggType
+  ObjectAgg_First: squint_trend_daily_assetObjectAggType
+  ObjectAgg_Second: squint_trend_daily_assetObjectAggType
+  SelfBuildAgg: jsonb
+}
+
+input squint_trend_daily_assetAggType {
+  terms: squint_trend_daily_assetAggTerms
+  avg: squint_trend_daily_assetAggAvg
+  range: squint_trend_daily_assetAggRange
+  stats: squint_trend_daily_assetAggStats
+  cardinality: squint_trend_daily_assetAggCardinality
+  aggs: squint_trend_daily_assetAggModel
+}
+
+input squint_trend_daily_assetAggTerms {
+  field: squint_trend_daily_assetType
+  size: Int
+}
+
+input squint_trend_daily_assetAggAvg {
+  field: squint_trend_daily_assetNumType!
+}
+
+input squint_trend_daily_assetAggRange {
+  field: squint_trend_daily_assetNumType!
+  ranges: [Ranges!]
+}
+
+
+input squint_trend_daily_assetAggStats {
+  field: squint_trend_daily_assetNumType
+}
+
+input squint_trend_daily_assetAggCardinality {
+  field: squint_trend_daily_assetType
+}
+
+input squint_trend_daily_assetObjectAggType {
+  terms: squint_trend_daily_assetObjectAggTerms
+  avg: squint_trend_daily_assetObjectAggAvg
+  range: squint_trend_daily_assetObjectAggRange
+  stats: squint_trend_daily_assetObjectAggStats
+  cardinality: squint_trend_daily_assetObjectAggCardinality
+  aggs: squint_trend_daily_assetAggModel
+}
+
+input squint_trend_daily_assetObjectAggTerms {
+  field: String
+  size: Int
+}
+
+input squint_trend_daily_assetObjectAggAvg {
+  field: String
+}
+
+input squint_trend_daily_assetObjectAggRange {
+  field: String
+  ranges: [Ranges!]
+}
+
+input squint_trend_daily_assetObjectAggStats {
+  field: String
+}
+
+input squint_trend_daily_assetObjectAggCardinality {
+  field: String
+}
+
+input squint_trend_daily_assetSearchModel {
+  query_string: squint_trend_daily_assetQueryString
+  multi_match: squint_trend_daily_assetMultiMatch
+  match: squint_trend_daily_assetMatch
+  range: squint_trend_daily_assetRange
+  bool: squint_trend_daily_assetBool
+}
+
+input squint_trend_daily_assetMultiMatch {
+  query: String
+  fields: [String!]
+}
+input squint_trend_daily_assetQueryString {
+  query: String
+}
+input squint_trend_daily_assetBool {
+  should: [squint_trend_daily_assetSearchModel!]
+}
+
+input squint_trend_daily_asset_object_searchModel {
+  query_string: squint_trend_daily_assetQueryString
+  multi_match: squint_trend_daily_assetMultiMatch
+  match: jsonb
+  range: jsonb
+  bool: squint_trend_daily_assetObjectBool
+}
+
+input squint_trend_daily_assetObjectBool {
+  should: [squint_trend_daily_asset_object_searchModel!]
+}
+
+type squint_trend_daily_assetOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: squint_trend_daily_asset_HitsFirst
+  aggregations: jsonb
+}
+
+
+type squint_trend_daily_asset_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: squint_trend_daily_asset_HitsSecond
+}
+
+type squint_trend_daily_asset_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: squint_trend_daily_asset_fields
+}
+enum squint_trend_daily_assetType{
+  datetime
+  total
+}
+enum squint_trend_daily_assetNumType{
+  datetime
+  total
+}
+input squint_trend_daily_assetMatch{
+  datetime : String
+  total : Int
+}
+input squint_trend_daily_assetSort{
+  datetime : [order_type]
+  total : [order_type]
+}
+input squint_trend_daily_assetRange{
+  datetime : String
+  total : Int
+}
+type squint_trend_daily_asset_fields {
+  datetime : String
+  total : Int
+}
+
+input squint_trend_daily_dnsAggModel {
+  NormalAgg_First: squint_trend_daily_dnsAggType
+  NormalAgg_Second: squint_trend_daily_dnsAggType
+  ObjectAgg_First: squint_trend_daily_dnsObjectAggType
+  ObjectAgg_Second: squint_trend_daily_dnsObjectAggType
+  SelfBuildAgg: jsonb
+}
+
+input squint_trend_daily_dnsAggType {
+  terms: squint_trend_daily_dnsAggTerms
+  avg: squint_trend_daily_dnsAggAvg
+  range: squint_trend_daily_dnsAggRange
+  stats: squint_trend_daily_dnsAggStats
+  cardinality: squint_trend_daily_dnsAggCardinality
+  aggs: squint_trend_daily_dnsAggModel
+}
+
+input squint_trend_daily_dnsAggTerms {
+  field: squint_trend_daily_dnsType
+  size: Int
+}
+
+input squint_trend_daily_dnsAggAvg {
+  field: squint_trend_daily_dnsNumType!
+}
+
+input squint_trend_daily_dnsAggRange {
+  field: squint_trend_daily_dnsNumType!
+  ranges: [Ranges!]
+}
+
+
+input squint_trend_daily_dnsAggStats {
+  field: squint_trend_daily_dnsNumType
+}
+
+input squint_trend_daily_dnsAggCardinality {
+  field: squint_trend_daily_dnsType
+}
+
+input squint_trend_daily_dnsObjectAggType {
+  terms: squint_trend_daily_dnsObjectAggTerms
+  avg: squint_trend_daily_dnsObjectAggAvg
+  range: squint_trend_daily_dnsObjectAggRange
+  stats: squint_trend_daily_dnsObjectAggStats
+  cardinality: squint_trend_daily_dnsObjectAggCardinality
+  aggs: squint_trend_daily_dnsAggModel
+}
+
+input squint_trend_daily_dnsObjectAggTerms {
+  field: String
+  size: Int
+}
+
+input squint_trend_daily_dnsObjectAggAvg {
+  field: String
+}
+
+input squint_trend_daily_dnsObjectAggRange {
+  field: String
+  ranges: [Ranges!]
+}
+
+input squint_trend_daily_dnsObjectAggStats {
+  field: String
+}
+
+input squint_trend_daily_dnsObjectAggCardinality {
+  field: String
+}
+
+input squint_trend_daily_dnsSearchModel {
+  query_string: squint_trend_daily_dnsQueryString
+  multi_match: squint_trend_daily_dnsMultiMatch
+  match: squint_trend_daily_dnsMatch
+  range: squint_trend_daily_dnsRange
+  bool: squint_trend_daily_dnsBool
+}
+
+input squint_trend_daily_dnsMultiMatch {
+  query: String
+  fields: [String!]
+}
+input squint_trend_daily_dnsQueryString {
+  query: String
+}
+input squint_trend_daily_dnsBool {
+  should: [squint_trend_daily_dnsSearchModel!]
+}
+
+input squint_trend_daily_dns_object_searchModel {
+  query_string: squint_trend_daily_dnsQueryString
+  multi_match: squint_trend_daily_dnsMultiMatch
+  match: jsonb
+  range: jsonb
+  bool: squint_trend_daily_dnsObjectBool
+}
+
+input squint_trend_daily_dnsObjectBool {
+  should: [squint_trend_daily_dns_object_searchModel!]
+}
+
+type squint_trend_daily_dnsOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: squint_trend_daily_dns_HitsFirst
+  aggregations: jsonb
+}
+
+
+type squint_trend_daily_dns_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: squint_trend_daily_dns_HitsSecond
+}
+
+type squint_trend_daily_dns_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: squint_trend_daily_dns_fields
+}
+enum squint_trend_daily_dnsType{
+  forwarding
+  hidden
+  morbid
+  open
+  recursive
+  total
+  datetime
+}
+enum squint_trend_daily_dnsNumType{
+  forwarding
+  hidden
+  morbid
+  open
+  recursive
+  total
+}
+input squint_trend_daily_dnsMatch{
+  forwarding : Int
+  hidden : Int
+  morbid : Int
+  open : Int
+  recursive : Int
+  total : Int
+  datetime : String
+}
+input squint_trend_daily_dnsSort{
+  forwarding : [order_type]
+  hidden : [order_type]
+  morbid : [order_type]
+  open : [order_type]
+  recursive : [order_type]
+  total : [order_type]
+  datetime : [order_type]
+}
+input squint_trend_daily_dnsRange{
+  forwarding : Int
+  hidden : Int
+  morbid : Int
+  open : Int
+  recursive : Int
+  total : Int
+}
+type squint_trend_daily_dns_fields {
+  datetime : String
+  forwarding : Int
+  hidden : Int
+  morbid : Int
+  open : Int
+  recursive : Int
+  total : Int
+}
+
+input squint_trend_daily_icpAggModel {
+  NormalAgg_First: squint_trend_daily_icpAggType
+  NormalAgg_Second: squint_trend_daily_icpAggType
+  ObjectAgg_First: squint_trend_daily_icpObjectAggType
+  ObjectAgg_Second: squint_trend_daily_icpObjectAggType
+  SelfBuildAgg: jsonb
+}
+
+input squint_trend_daily_icpAggType {
+  terms: squint_trend_daily_icpAggTerms
+  avg: squint_trend_daily_icpAggAvg
+  range: squint_trend_daily_icpAggRange
+  stats: squint_trend_daily_icpAggStats
+  cardinality: squint_trend_daily_icpAggCardinality
+  aggs: squint_trend_daily_icpAggModel
+}
+
+input squint_trend_daily_icpAggTerms {
+  field: squint_trend_daily_icpType
+  size: Int
+}
+
+input squint_trend_daily_icpAggAvg {
+  field: squint_trend_daily_icpNumType!
+}
+
+input squint_trend_daily_icpAggRange {
+  field: squint_trend_daily_icpNumType!
+  ranges: [Ranges!]
+}
+
+
+input squint_trend_daily_icpAggStats {
+  field: squint_trend_daily_icpNumType
+}
+
+input squint_trend_daily_icpAggCardinality {
+  field: squint_trend_daily_icpType
+}
+
+input squint_trend_daily_icpObjectAggType {
+  terms: squint_trend_daily_icpObjectAggTerms
+  avg: squint_trend_daily_icpObjectAggAvg
+  range: squint_trend_daily_icpObjectAggRange
+  stats: squint_trend_daily_icpObjectAggStats
+  cardinality: squint_trend_daily_icpObjectAggCardinality
+  aggs: squint_trend_daily_icpAggModel
+}
+
+input squint_trend_daily_icpObjectAggTerms {
+  field: String
+  size: Int
+}
+
+input squint_trend_daily_icpObjectAggAvg {
+  field: String
+}
+
+input squint_trend_daily_icpObjectAggRange {
+  field: String
+  ranges: [Ranges!]
+}
+
+input squint_trend_daily_icpObjectAggStats {
+  field: String
+}
+
+input squint_trend_daily_icpObjectAggCardinality {
+  field: String
+}
+
+input squint_trend_daily_icpSearchModel {
+  query_string: squint_trend_daily_icpQueryString
+  multi_match: squint_trend_daily_icpMultiMatch
+  match: squint_trend_daily_icpMatch
+  range: squint_trend_daily_icpRange
+  bool: squint_trend_daily_icpBool
+}
+
+input squint_trend_daily_icpMultiMatch {
+  query: String
+  fields: [String!]
+}
+input squint_trend_daily_icpQueryString {
+  query: String
+}
+input squint_trend_daily_icpBool {
+  should: [squint_trend_daily_icpSearchModel!]
+}
+
+input squint_trend_daily_icp_object_searchModel {
+  query_string: squint_trend_daily_icpQueryString
+  multi_match: squint_trend_daily_icpMultiMatch
+  match: jsonb
+  range: jsonb
+  bool: squint_trend_daily_icpObjectBool
+}
+
+input squint_trend_daily_icpObjectBool {
+  should: [squint_trend_daily_icp_object_searchModel!]
+}
+
+type squint_trend_daily_icpOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: squint_trend_daily_icp_HitsFirst
+  aggregations: jsonb
+}
+
+
+type squint_trend_daily_icp_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: squint_trend_daily_icp_HitsSecond
+}
+
+type squint_trend_daily_icp_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: squint_trend_daily_icp_fields
+}
+enum squint_trend_daily_icpType{
+  icp
+  total
+  datetime
+}
+enum squint_trend_daily_icpNumType{
+  icp
+  total
+}
+input squint_trend_daily_icpMatch{
+  icp : Int
+  total : Int
+  datetime : String
+}
+input squint_trend_daily_icpSort{
+  icp : [order_type]
+  total : [order_type]
+  datetime : [order_type]
+}
+input squint_trend_daily_icpRange{
+  icp : Int
+  total : Int
+  datetime : String
+}
+type squint_trend_daily_icp_fields {
+  datetime : String
+  icp : Int
+  total : Int
+}
+
+input squint_trend_daily_psrAggModel {
+  NormalAgg_First: squint_trend_daily_psrAggType
+  NormalAgg_Second: squint_trend_daily_psrAggType
+  ObjectAgg_First: squint_trend_daily_psrObjectAggType
+  ObjectAgg_Second: squint_trend_daily_psrObjectAggType
+  SelfBuildAgg: jsonb
+}
+
+input squint_trend_daily_psrAggType {
+  terms: squint_trend_daily_psrAggTerms
+  avg: squint_trend_daily_psrAggAvg
+  range: squint_trend_daily_psrAggRange
+  stats: squint_trend_daily_psrAggStats
+  cardinality: squint_trend_daily_psrAggCardinality
+  aggs: squint_trend_daily_psrAggModel
+}
+
+input squint_trend_daily_psrAggTerms {
+  field: squint_trend_daily_psrType
+  size: Int
+}
+
+input squint_trend_daily_psrAggAvg {
+  field: squint_trend_daily_psrNumType!
+}
+
+input squint_trend_daily_psrAggRange {
+  field: squint_trend_daily_psrNumType!
+  ranges: [Ranges!]
+}
+
+
+input squint_trend_daily_psrAggStats {
+  field: squint_trend_daily_psrNumType
+}
+
+input squint_trend_daily_psrAggCardinality {
+  field: squint_trend_daily_psrType
+}
+
+input squint_trend_daily_psrObjectAggType {
+  terms: squint_trend_daily_psrObjectAggTerms
+  avg: squint_trend_daily_psrObjectAggAvg
+  range: squint_trend_daily_psrObjectAggRange
+  stats: squint_trend_daily_psrObjectAggStats
+  cardinality: squint_trend_daily_psrObjectAggCardinality
+  aggs: squint_trend_daily_psrAggModel
+}
+
+input squint_trend_daily_psrObjectAggTerms {
+  field: String
+  size: Int
+}
+
+input squint_trend_daily_psrObjectAggAvg {
+  field: String
+}
+
+input squint_trend_daily_psrObjectAggRange {
+  field: String
+  ranges: [Ranges!]
+}
+
+input squint_trend_daily_psrObjectAggStats {
+  field: String
+}
+
+input squint_trend_daily_psrObjectAggCardinality {
+  field: String
+}
+
+input squint_trend_daily_psrSearchModel {
+  query_string: squint_trend_daily_psrQueryString
+  multi_match: squint_trend_daily_psrMultiMatch
+  match: squint_trend_daily_psrMatch
+  range: squint_trend_daily_psrRange
+  bool: squint_trend_daily_psrBool
+}
+
+input squint_trend_daily_psrMultiMatch {
+  query: String
+  fields: [String!]
+}
+input squint_trend_daily_psrQueryString {
+  query: String
+}
+input squint_trend_daily_psrBool {
+  should: [squint_trend_daily_psrSearchModel!]
+}
+
+input squint_trend_daily_psr_object_searchModel {
+  query_string: squint_trend_daily_psrQueryString
+  multi_match: squint_trend_daily_psrMultiMatch
+  match: jsonb
+  range: jsonb
+  bool: squint_trend_daily_psrObjectBool
+}
+
+input squint_trend_daily_psrObjectBool {
+  should: [squint_trend_daily_psr_object_searchModel!]
+}
+
+type squint_trend_daily_psrOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: squint_trend_daily_psr_HitsFirst
+  aggregations: jsonb
+}
+
+
+type squint_trend_daily_psr_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: squint_trend_daily_psr_HitsSecond
+}
+
+type squint_trend_daily_psr_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: squint_trend_daily_psr_fields
+}
+enum squint_trend_daily_psrType{
+  psr
+  total
+  datetime
+}
+enum squint_trend_daily_psrNumType{
+  psr
+  total
+}
+input squint_trend_daily_psrMatch{
+  psr : Int
+  total : Int
+  datetime : String
+}
+input squint_trend_daily_psrSort{
+  psr : [order_type]
+  total : [order_type]
+  datetime : [order_type]
+}
+input squint_trend_daily_psrRange{
+  psr : Int
+  total : Int
+}
+type squint_trend_daily_psr_fields {
+  datetime : String
+  psr : Int
+  total : Int
+}
+
+input squint_trend_monthly_active_ipAggModel {
+  NormalAgg_First: squint_trend_monthly_active_ipAggType
+  NormalAgg_Second: squint_trend_monthly_active_ipAggType
+  ObjectAgg_First: squint_trend_monthly_active_ipObjectAggType
+  ObjectAgg_Second: squint_trend_monthly_active_ipObjectAggType
+  SelfBuildAgg: jsonb
+}
+
+input squint_trend_monthly_active_ipAggType {
+  terms: squint_trend_monthly_active_ipAggTerms
+  avg: squint_trend_monthly_active_ipAggAvg
+  range: squint_trend_monthly_active_ipAggRange
+  stats: squint_trend_monthly_active_ipAggStats
+  cardinality: squint_trend_monthly_active_ipAggCardinality
+  aggs: squint_trend_monthly_active_ipAggModel
+}
+
+input squint_trend_monthly_active_ipAggTerms {
+  field: squint_trend_monthly_active_ipType
+  size: Int
+}
+
+input squint_trend_monthly_active_ipAggAvg {
+  field: squint_trend_monthly_active_ipNumType!
+}
+
+input squint_trend_monthly_active_ipAggRange {
+  field: squint_trend_monthly_active_ipNumType!
+  ranges: [Ranges!]
+}
+
+
+input squint_trend_monthly_active_ipAggStats {
+  field: squint_trend_monthly_active_ipNumType
+}
+
+input squint_trend_monthly_active_ipAggCardinality {
+  field: squint_trend_monthly_active_ipType
+}
+
+input squint_trend_monthly_active_ipObjectAggType {
+  terms: squint_trend_monthly_active_ipObjectAggTerms
+  avg: squint_trend_monthly_active_ipObjectAggAvg
+  range: squint_trend_monthly_active_ipObjectAggRange
+  stats: squint_trend_monthly_active_ipObjectAggStats
+  cardinality: squint_trend_monthly_active_ipObjectAggCardinality
+  aggs: squint_trend_monthly_active_ipAggModel
+}
+
+input squint_trend_monthly_active_ipObjectAggTerms {
+  field: String
+  size: Int
+}
+
+input squint_trend_monthly_active_ipObjectAggAvg {
+  field: String
+}
+
+input squint_trend_monthly_active_ipObjectAggRange {
+  field: String
+  ranges: [Ranges!]
+}
+
+input squint_trend_monthly_active_ipObjectAggStats {
+  field: String
+}
+
+input squint_trend_monthly_active_ipObjectAggCardinality {
+  field: String
+}
+
+input squint_trend_monthly_active_ipSearchModel {
+  query_string: squint_trend_monthly_active_ipQueryString
+  multi_match: squint_trend_monthly_active_ipMultiMatch
+  match: squint_trend_monthly_active_ipMatch
+  range: squint_trend_monthly_active_ipRange
+  bool: squint_trend_monthly_active_ipBool
+}
+
+input squint_trend_monthly_active_ipMultiMatch {
+  query: String
+  fields: [String!]
+}
+input squint_trend_monthly_active_ipQueryString {
+  query: String
+}
+input squint_trend_monthly_active_ipBool {
+  should: [squint_trend_monthly_active_ipSearchModel!]
+}
+
+input squint_trend_monthly_active_ip_object_searchModel {
+  query_string: squint_trend_monthly_active_ipQueryString
+  multi_match: squint_trend_monthly_active_ipMultiMatch
+  match: jsonb
+  range: jsonb
+  bool: squint_trend_monthly_active_ipObjectBool
+}
+
+input squint_trend_monthly_active_ipObjectBool {
+  should: [squint_trend_monthly_active_ip_object_searchModel!]
+}
+
+type squint_trend_monthly_active_ipOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: squint_trend_monthly_active_ip_HitsFirst
+  aggregations: jsonb
+}
+
+
+type squint_trend_monthly_active_ip_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: squint_trend_monthly_active_ip_HitsSecond
+}
+
+type squint_trend_monthly_active_ip_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: squint_trend_monthly_active_ip_fields
+}
+enum squint_trend_monthly_active_ipType{
+  service
+  total
+  web_service
+  datetime
+}
+enum squint_trend_monthly_active_ipNumType{
+  service
+  total
+  web_service
+}
+input squint_trend_monthly_active_ipMatch{
+  service : Int
+  total : Int
+  web_service : Int
+  datetime : String
+}
+input squint_trend_monthly_active_ipSort{
+  service : [order_type]
+  total : [order_type]
+  web_service : [order_type]
+  datetime : [order_type]
+}
+input squint_trend_monthly_active_ipRange{
+  service : Int
+  total : Int
+  web_service : Int
+}
+type squint_trend_monthly_active_ip_fields {
+  datetime : String
+  service : Int
+  total : Int
+  web_service : Int
+}
+
+input squint_trend_monthly_assetAggModel {
+  NormalAgg_First: squint_trend_monthly_assetAggType
+  NormalAgg_Second: squint_trend_monthly_assetAggType
+  ObjectAgg_First: squint_trend_monthly_assetObjectAggType
+  ObjectAgg_Second: squint_trend_monthly_assetObjectAggType
+  SelfBuildAgg: jsonb
+}
+
+input squint_trend_monthly_assetAggType {
+  terms: squint_trend_monthly_assetAggTerms
+  avg: squint_trend_monthly_assetAggAvg
+  range: squint_trend_monthly_assetAggRange
+  stats: squint_trend_monthly_assetAggStats
+  cardinality: squint_trend_monthly_assetAggCardinality
+  aggs: squint_trend_monthly_assetAggModel
+}
+
+input squint_trend_monthly_assetAggTerms {
+  field: squint_trend_monthly_assetType
+  size: Int
+}
+
+input squint_trend_monthly_assetAggAvg {
+  field: squint_trend_monthly_assetNumType!
+}
+
+input squint_trend_monthly_assetAggRange {
+  field: squint_trend_monthly_assetNumType!
+  ranges: [Ranges!]
+}
+
+
+input squint_trend_monthly_assetAggStats {
+  field: squint_trend_monthly_assetNumType
+}
+
+input squint_trend_monthly_assetAggCardinality {
+  field: squint_trend_monthly_assetType
+}
+
+input squint_trend_monthly_assetObjectAggType {
+  terms: squint_trend_monthly_assetObjectAggTerms
+  avg: squint_trend_monthly_assetObjectAggAvg
+  range: squint_trend_monthly_assetObjectAggRange
+  stats: squint_trend_monthly_assetObjectAggStats
+  cardinality: squint_trend_monthly_assetObjectAggCardinality
+  aggs: squint_trend_monthly_assetAggModel
+}
+
+input squint_trend_monthly_assetObjectAggTerms {
+  field: String
+  size: Int
+}
+
+input squint_trend_monthly_assetObjectAggAvg {
+  field: String
+}
+
+input squint_trend_monthly_assetObjectAggRange {
+  field: String
+  ranges: [Ranges!]
+}
+
+input squint_trend_monthly_assetObjectAggStats {
+  field: String
+}
+
+input squint_trend_monthly_assetObjectAggCardinality {
+  field: String
+}
+
+input squint_trend_monthly_assetSearchModel {
+  query_string: squint_trend_monthly_assetQueryString
+  multi_match: squint_trend_monthly_assetMultiMatch
+  match: squint_trend_monthly_assetMatch
+  range: squint_trend_monthly_assetRange
+  bool: squint_trend_monthly_assetBool
+}
+
+input squint_trend_monthly_assetMultiMatch {
+  query: String
+  fields: [String!]
+}
+input squint_trend_monthly_assetQueryString {
+  query: String
+}
+input squint_trend_monthly_assetBool {
+  should: [squint_trend_monthly_assetSearchModel!]
+}
+
+input squint_trend_monthly_asset_object_searchModel {
+  query_string: squint_trend_monthly_assetQueryString
+  multi_match: squint_trend_monthly_assetMultiMatch
+  match: jsonb
+  range: jsonb
+  bool: squint_trend_monthly_assetObjectBool
+}
+
+input squint_trend_monthly_assetObjectBool {
+  should: [squint_trend_monthly_asset_object_searchModel!]
+}
+
+type squint_trend_monthly_assetOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: squint_trend_monthly_asset_HitsFirst
+  aggregations: jsonb
+}
+
+
+type squint_trend_monthly_asset_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: squint_trend_monthly_asset_HitsSecond
+}
+
+type squint_trend_monthly_asset_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: squint_trend_monthly_asset_fields
+}
+enum squint_trend_monthly_assetType{
+  total
+  datetime
+}
+enum squint_trend_monthly_assetNumType{
+  total
+}
+input squint_trend_monthly_assetMatch{
+  total : Int
+  datetime : String
+}
+input squint_trend_monthly_assetSort{
+  total : [order_type]
+  datetime : [order_type]
+}
+input squint_trend_monthly_assetRange{
+  total : Int
+}
+type squint_trend_monthly_asset_fields {
+  datetime : String
+  total : Int
+}
+
+input squint_trend_monthly_icpAggModel {
+  NormalAgg_First: squint_trend_monthly_icpAggType
+  NormalAgg_Second: squint_trend_monthly_icpAggType
+  ObjectAgg_First: squint_trend_monthly_icpObjectAggType
+  ObjectAgg_Second: squint_trend_monthly_icpObjectAggType
+  SelfBuildAgg: jsonb
+}
+
+input squint_trend_monthly_icpAggType {
+  terms: squint_trend_monthly_icpAggTerms
+  avg: squint_trend_monthly_icpAggAvg
+  range: squint_trend_monthly_icpAggRange
+  stats: squint_trend_monthly_icpAggStats
+  cardinality: squint_trend_monthly_icpAggCardinality
+  aggs: squint_trend_monthly_icpAggModel
+}
+
+input squint_trend_monthly_icpAggTerms {
+  field: squint_trend_monthly_icpType
+  size: Int
+}
+
+input squint_trend_monthly_icpAggAvg {
+  field: squint_trend_monthly_icpNumType!
+}
+
+input squint_trend_monthly_icpAggRange {
+  field: squint_trend_monthly_icpNumType!
+  ranges: [Ranges!]
+}
+
+
+input squint_trend_monthly_icpAggStats {
+  field: squint_trend_monthly_icpNumType
+}
+
+input squint_trend_monthly_icpAggCardinality {
+  field: squint_trend_monthly_icpType
+}
+
+input squint_trend_monthly_icpObjectAggType {
+  terms: squint_trend_monthly_icpObjectAggTerms
+  avg: squint_trend_monthly_icpObjectAggAvg
+  range: squint_trend_monthly_icpObjectAggRange
+  stats: squint_trend_monthly_icpObjectAggStats
+  cardinality: squint_trend_monthly_icpObjectAggCardinality
+  aggs: squint_trend_monthly_icpAggModel
+}
+
+input squint_trend_monthly_icpObjectAggTerms {
+  field: String
+  size: Int
+}
+
+input squint_trend_monthly_icpObjectAggAvg {
+  field: String
+}
+
+input squint_trend_monthly_icpObjectAggRange {
+  field: String
+  ranges: [Ranges!]
+}
+
+input squint_trend_monthly_icpObjectAggStats {
+  field: String
+}
+
+input squint_trend_monthly_icpObjectAggCardinality {
+  field: String
+}
+
+input squint_trend_monthly_icpSearchModel {
+  query_string: squint_trend_monthly_icpQueryString
+  multi_match: squint_trend_monthly_icpMultiMatch
+  match: squint_trend_monthly_icpMatch
+  range: squint_trend_monthly_icpRange
+  bool: squint_trend_monthly_icpBool
+}
+
+input squint_trend_monthly_icpMultiMatch {
+  query: String
+  fields: [String!]
+}
+input squint_trend_monthly_icpQueryString {
+  query: String
+}
+input squint_trend_monthly_icpBool {
+  should: [squint_trend_monthly_icpSearchModel!]
+}
+
+input squint_trend_monthly_icp_object_searchModel {
+  query_string: squint_trend_monthly_icpQueryString
+  multi_match: squint_trend_monthly_icpMultiMatch
+  match: jsonb
+  range: jsonb
+  bool: squint_trend_monthly_icpObjectBool
+}
+
+input squint_trend_monthly_icpObjectBool {
+  should: [squint_trend_monthly_icp_object_searchModel!]
+}
+
+type squint_trend_monthly_icpOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: squint_trend_monthly_icp_HitsFirst
+  aggregations: jsonb
+}
+
+
+type squint_trend_monthly_icp_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: squint_trend_monthly_icp_HitsSecond
+}
+
+type squint_trend_monthly_icp_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: squint_trend_monthly_icp_fields
+}
+enum squint_trend_monthly_icpType{
+  icp
+  total
+  datetime
+}
+enum squint_trend_monthly_icpNumType{
+  icp
+  total
+}
+input squint_trend_monthly_icpMatch{
+  icp : Int
+  total : Int
+  datetime : String
+}
+input squint_trend_monthly_icpSort{
+  icp : [order_type]
+  total : [order_type]
+  datetime : [order_type]
+}
+input squint_trend_monthly_icpRange{
+  icp : Int
+  total : Int
+}
+type squint_trend_monthly_icp_fields {
+  datetime : String
+  icp : Int
+  total : Int
+}
+
+input squint_trend_monthly_psrAggModel {
+  NormalAgg_First: squint_trend_monthly_psrAggType
+  NormalAgg_Second: squint_trend_monthly_psrAggType
+  ObjectAgg_First: squint_trend_monthly_psrObjectAggType
+  ObjectAgg_Second: squint_trend_monthly_psrObjectAggType
+  SelfBuildAgg: jsonb
+}
+
+input squint_trend_monthly_psrAggType {
+  terms: squint_trend_monthly_psrAggTerms
+  avg: squint_trend_monthly_psrAggAvg
+  range: squint_trend_monthly_psrAggRange
+  stats: squint_trend_monthly_psrAggStats
+  cardinality: squint_trend_monthly_psrAggCardinality
+  aggs: squint_trend_monthly_psrAggModel
+}
+
+input squint_trend_monthly_psrAggTerms {
+  field: squint_trend_monthly_psrType
+  size: Int
+}
+
+input squint_trend_monthly_psrAggAvg {
+  field: squint_trend_monthly_psrNumType!
+}
+
+input squint_trend_monthly_psrAggRange {
+  field: squint_trend_monthly_psrNumType!
+  ranges: [Ranges!]
+}
+
+
+input squint_trend_monthly_psrAggStats {
+  field: squint_trend_monthly_psrNumType
+}
+
+input squint_trend_monthly_psrAggCardinality {
+  field: squint_trend_monthly_psrType
+}
+
+input squint_trend_monthly_psrObjectAggType {
+  terms: squint_trend_monthly_psrObjectAggTerms
+  avg: squint_trend_monthly_psrObjectAggAvg
+  range: squint_trend_monthly_psrObjectAggRange
+  stats: squint_trend_monthly_psrObjectAggStats
+  cardinality: squint_trend_monthly_psrObjectAggCardinality
+  aggs: squint_trend_monthly_psrAggModel
+}
+
+input squint_trend_monthly_psrObjectAggTerms {
+  field: String
+  size: Int
+}
+
+input squint_trend_monthly_psrObjectAggAvg {
+  field: String
+}
+
+input squint_trend_monthly_psrObjectAggRange {
+  field: String
+  ranges: [Ranges!]
+}
+
+input squint_trend_monthly_psrObjectAggStats {
+  field: String
+}
+
+input squint_trend_monthly_psrObjectAggCardinality {
+  field: String
+}
+
+input squint_trend_monthly_psrSearchModel {
+  query_string: squint_trend_monthly_psrQueryString
+  multi_match: squint_trend_monthly_psrMultiMatch
+  match: squint_trend_monthly_psrMatch
+  range: squint_trend_monthly_psrRange
+  bool: squint_trend_monthly_psrBool
+}
+
+input squint_trend_monthly_psrMultiMatch {
+  query: String
+  fields: [String!]
+}
+input squint_trend_monthly_psrQueryString {
+  query: String
+}
+input squint_trend_monthly_psrBool {
+  should: [squint_trend_monthly_psrSearchModel!]
+}
+
+input squint_trend_monthly_psr_object_searchModel {
+  query_string: squint_trend_monthly_psrQueryString
+  multi_match: squint_trend_monthly_psrMultiMatch
+  match: jsonb
+  range: jsonb
+  bool: squint_trend_monthly_psrObjectBool
+}
+
+input squint_trend_monthly_psrObjectBool {
+  should: [squint_trend_monthly_psr_object_searchModel!]
+}
+
+type squint_trend_monthly_psrOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: squint_trend_monthly_psr_HitsFirst
+  aggregations: jsonb
+}
+
+
+type squint_trend_monthly_psr_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: squint_trend_monthly_psr_HitsSecond
+}
+
+type squint_trend_monthly_psr_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: squint_trend_monthly_psr_fields
+}
+enum squint_trend_monthly_psrType{
+  psr
+  total
+  datetime
+}
+enum squint_trend_monthly_psrNumType{
+  psr
+  total
+}
+input squint_trend_monthly_psrMatch{
+  psr : Int
+  total : Int
+  datetime : String
+}
+input squint_trend_monthly_psrSort{
+  psr : [order_type]
+  total : [order_type]
+  datetime : [order_type]
+}
+input squint_trend_monthly_psrRange{
+  psr : Int
+  total : Int
+}
+type squint_trend_monthly_psr_fields {
+  datetime : String
+  psr : Int
+  total : Int
+}
+
+input squint_trend_monthly_dnsAggModel {
+  NormalAgg_First: squint_trend_monthly_dnsAggType
+  NormalAgg_Second: squint_trend_monthly_dnsAggType
+  ObjectAgg_First: squint_trend_monthly_dnsObjectAggType
+  ObjectAgg_Second: squint_trend_monthly_dnsObjectAggType
+  SelfBuildAgg: jsonb
+}
+
+input squint_trend_monthly_dnsAggType {
+  terms: squint_trend_monthly_dnsAggTerms
+  avg: squint_trend_monthly_dnsAggAvg
+  range: squint_trend_monthly_dnsAggRange
+  stats: squint_trend_monthly_dnsAggStats
+  cardinality: squint_trend_monthly_dnsAggCardinality
+  aggs: squint_trend_monthly_dnsAggModel
+}
+
+input squint_trend_monthly_dnsAggTerms {
+  field: squint_trend_monthly_dnsType
+  size: Int
+}
+
+input squint_trend_monthly_dnsAggAvg {
+  field: squint_trend_monthly_dnsNumType!
+}
+
+input squint_trend_monthly_dnsAggRange {
+  field: squint_trend_monthly_dnsNumType!
+  ranges: [Ranges!]
+}
+
+
+input squint_trend_monthly_dnsAggStats {
+  field: squint_trend_monthly_dnsNumType
+}
+
+input squint_trend_monthly_dnsAggCardinality {
+  field: squint_trend_monthly_dnsType
+}
+
+input squint_trend_monthly_dnsObjectAggType {
+  terms: squint_trend_monthly_dnsObjectAggTerms
+  avg: squint_trend_monthly_dnsObjectAggAvg
+  range: squint_trend_monthly_dnsObjectAggRange
+  stats: squint_trend_monthly_dnsObjectAggStats
+  cardinality: squint_trend_monthly_dnsObjectAggCardinality
+  aggs: squint_trend_monthly_dnsAggModel
+}
+
+input squint_trend_monthly_dnsObjectAggTerms {
+  field: String
+  size: Int
+}
+
+input squint_trend_monthly_dnsObjectAggAvg {
+  field: String
+}
+
+input squint_trend_monthly_dnsObjectAggRange {
+  field: String
+  ranges: [Ranges!]
+}
+
+input squint_trend_monthly_dnsObjectAggStats {
+  field: String
+}
+
+input squint_trend_monthly_dnsObjectAggCardinality {
+  field: String
+}
+
+input squint_trend_monthly_dnsSearchModel {
+  query_string: squint_trend_monthly_dnsQueryString
+  multi_match: squint_trend_monthly_dnsMultiMatch
+  match: squint_trend_monthly_dnsMatch
+  range: squint_trend_monthly_dnsRange
+  bool: squint_trend_monthly_dnsBool
+}
+
+input squint_trend_monthly_dnsMultiMatch {
+  query: String
+  fields: [String!]
+}
+input squint_trend_monthly_dnsQueryString {
+  query: String
+}
+input squint_trend_monthly_dnsBool {
+  should: [squint_trend_monthly_dnsSearchModel!]
+}
+
+input squint_trend_monthly_dnsObjectSearchModel {
+  query_string: squint_trend_monthly_dnsQueryString
+  multi_match: squint_trend_monthly_dnsMultiMatch
+  match: jsonb
+  range: jsonb
+  bool: squint_trend_monthly_dnsObjectBool
+}
+
+input squint_trend_monthly_dnsObjectBool {
+  should: [squint_trend_monthly_dnsObjectSearchModel!]
+}
+
+type squint_trend_monthly_dnsOutput {
+  took: Int
+  time_out: Boolean
+  _shards: jsonb
+  hits: squint_trend_monthly_dns_HitsFirst
+  aggregations: jsonb
+}
+
+
+type squint_trend_monthly_dns_HitsFirst {
+  total: jsonb
+  max_score: jsonb
+  hits: squint_trend_monthly_dns_HitsSecond
+}
+
+type squint_trend_monthly_dns_HitsSecond {
+  _index: jsonb
+  _type: jsonb
+  _id: jsonb
+  _score: jsonb
+  _source: squint_trend_monthly_dns_fields
+}
+enum squint_trend_monthly_dnsType{
+  forwarding
+  hidden
+  morbid
+  open
+  recursive
+  total
+  datetime
+}
+enum squint_trend_monthly_dnsNumType{
+  forwarding
+  hidden
+  morbid
+  open
+  recursive
+  total
+}
+input squint_trend_monthly_dnsMatch{
+  forwarding : Int
+  hidden : Int
+  morbid : Int
+  open : Int
+  recursive : Int
+  total : Int
+  datetime : String
+}
+input squint_trend_monthly_dnsSort{
+  forwarding : [order_type]
+  hidden : [order_type]
+  morbid : [order_type]
+  open : [order_type]
+  recursive : [order_type]
+  total : [order_type]
+  datetime : [order_type]
+}
+input squint_trend_monthly_dnsRange{
+  forwarding : Int
+  hidden : Int
+  morbid : Int
+  open : Int
+  recursive : Int
+  total : Int
+}
+type squint_trend_monthly_dns_fields {
+  datetime : String
+  forwarding : Int
+  hidden : Int
+  morbid : Int
+  open : Int
+  recursive : Int
+  total : Int
+}

@@ -1,0 +1,918 @@
+{
+    "mappings" : {
+      "properties" : {
+        "associated_chinese" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "create_timestamp" : {
+          "type" : "date",
+          "format" : "yyyy-MM-dd HH:mm:ss"
+        },
+        "domain" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          },
+          "analyzer" : "ik_max_word"
+        },
+        "domain_status" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "icp" : {
+          "properties" : {
+            "collected_timestamp" : {
+              "type" : "date",
+              "format" : "yyyy-MM-dd HH:mm:ss"
+            },
+            "domain" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "domain_id" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "home_url" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              },
+              "analyzer" : "ik_max_word"
+            },
+            "leader_name" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "limit_access" : {
+              "type" : "keyword"
+            },
+            "main_id" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "main_licence" : {
+              "type" : "keyword"
+            },
+            "service_id" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "service_licence" : {
+              "type" : "keyword"
+            },
+            "service_name" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              },
+              "analyzer" : "ik_max_word"
+            },
+            "unit_name" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              },
+              "analyzer" : "ik_max_word"
+            },
+            "unit_type" : {
+              "type" : "keyword"
+            },
+            "update_record_time" : {
+              "type" : "keyword"
+            }
+          }
+        },
+        "psr" : {
+          "properties" : {
+            "collected_timestamp" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "domain" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "record_bureau" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "record_id" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "record_time" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "unit_name" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "unit_type" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "website_main_domain" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "website_name" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "website_second_domain" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "website_type" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            }
+          }
+        },
+        "snapshot" : {
+          "properties" : {
+            "classification" : {
+              "properties" : {
+                "probability" : {
+                  "type" : "float"
+                },
+                "type" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                }
+              }
+            },
+            "collected_timestamp" : {
+              "type" : "date"
+            },
+            "meta" : {
+              "properties" : {
+                "classifier_version" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "location" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "snapshot_version" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                }
+              }
+            },
+            "request" : {
+              "properties" : {
+                "domain" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "main_domain" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "request_url" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "scheme" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                }
+              }
+            },
+            "response" : {
+              "properties" : {
+                "cert" : {
+                  "properties" : {
+                    "hash" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    },
+                    "raw" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    },
+                    "san" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "external_urls" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "favicon" : {
+                  "properties" : {
+                    "img_url" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    },
+                    "md5" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "frame" : {
+                  "properties" : {
+                    "description" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    },
+                    "frame_url" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    },
+                    "html_url" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    },
+                    "icp" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    },
+                    "keywords" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    },
+                    "text_content_url" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    },
+                    "title" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "remote_address" : {
+                  "properties" : {
+                    "ip" : {
+                      "type" : "text",
+                      "fields" : {
+                        "keyword" : {
+                          "type" : "keyword",
+                          "ignore_above" : 256
+                        }
+                      }
+                    },
+                    "port" : {
+                      "type" : "long"
+                    }
+                  }
+                },
+                "response_url" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "snapshot_url" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "update_timestamp" : {
+          "type" : "date",
+          "format" : "yyyy-MM-dd HH:mm:ss"
+        },
+        "whois" : {
+          "properties" : {
+            "administrator" : {
+              "properties" : {
+                "city" : {
+                  "type" : "keyword"
+                },
+                "country" : {
+                  "type" : "keyword"
+                },
+                "email" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                },
+                "fax" : {
+                  "type" : "keyword"
+                },
+                "fax_extension" : {
+                  "type" : "keyword"
+                },
+                "id" : {
+                  "type" : "keyword"
+                },
+                "name" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                },
+                "organization" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                },
+                "phone" : {
+                  "type" : "keyword"
+                },
+                "phone_extension" : {
+                  "type" : "keyword"
+                },
+                "postal_code" : {
+                  "type" : "keyword"
+                },
+                "province" : {
+                  "type" : "keyword"
+                },
+                "street" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                }
+              }
+            },
+            "billing" : {
+              "properties" : {
+                "city" : {
+                  "type" : "keyword"
+                },
+                "country" : {
+                  "type" : "keyword"
+                },
+                "email" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                },
+                "fax" : {
+                  "type" : "keyword"
+                },
+                "fax_extension" : {
+                  "type" : "keyword"
+                },
+                "id" : {
+                  "type" : "keyword"
+                },
+                "name" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                },
+                "organization" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                },
+                "phone" : {
+                  "type" : "keyword"
+                },
+                "phone_extension" : {
+                  "type" : "keyword"
+                },
+                "postal_code" : {
+                  "type" : "keyword"
+                },
+                "province" : {
+                  "type" : "keyword"
+                },
+                "street" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                }
+              }
+            },
+            "collected_timestamp" : {
+              "type" : "date",
+              "format" : "yyyy-MM-dd HH:mm:ss"
+            },
+            "domain" : {
+              "properties" : {
+                "dns_sec" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "name" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "name_servers" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "status" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                }
+              }
+            },
+            "domain_info" : {
+              "properties" : {
+                "dns_sec" : {
+                  "type" : "keyword"
+                },
+                "name" : {
+                  "type" : "keyword"
+                },
+                "name_servers" : {
+                  "type" : "keyword"
+                },
+                "status" : {
+                  "type" : "keyword"
+                }
+              }
+            },
+            "registrant" : {
+              "properties" : {
+                "city" : {
+                  "type" : "keyword"
+                },
+                "country" : {
+                  "type" : "keyword"
+                },
+                "email" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                },
+                "fax" : {
+                  "type" : "keyword"
+                },
+                "fax_extension" : {
+                  "type" : "keyword"
+                },
+                "id" : {
+                  "type" : "keyword"
+                },
+                "name" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                },
+                "organization" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                },
+                "phone" : {
+                  "type" : "keyword"
+                },
+                "phone_extension" : {
+                  "type" : "keyword"
+                },
+                "postal_code" : {
+                  "type" : "keyword"
+                },
+                "province" : {
+                  "type" : "keyword"
+                },
+                "street" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                }
+              }
+            },
+            "registrar" : {
+              "properties" : {
+                "email" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                },
+                "iana_id" : {
+                  "type" : "keyword"
+                },
+                "name" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                },
+                "phone" : {
+                  "type" : "keyword"
+                },
+                "website" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                },
+                "whois_servers" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                }
+              }
+            },
+            "registry" : {
+              "properties" : {
+                "creation_time" : {
+                  "type" : "date"
+                },
+                "domain_id" : {
+                  "type" : "keyword"
+                },
+                "expiration_time" : {
+                  "type" : "date"
+                },
+                "updated_time" : {
+                  "type" : "date"
+                }
+              }
+            },
+            "technician" : {
+              "properties" : {
+                "city" : {
+                  "type" : "keyword"
+                },
+                "country" : {
+                  "type" : "keyword"
+                },
+                "email" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                },
+                "fax" : {
+                  "type" : "keyword"
+                },
+                "fax_extension" : {
+                  "type" : "keyword"
+                },
+                "id" : {
+                  "type" : "keyword"
+                },
+                "name" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                },
+                "organization" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                },
+                "phone" : {
+                  "type" : "keyword"
+                },
+                "phone_extension" : {
+                  "type" : "keyword"
+                },
+                "postal_code" : {
+                  "type" : "keyword"
+                },
+                "province" : {
+                  "type" : "keyword"
+                },
+                "street" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  },
+                  "analyzer" : "ik_max_word"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}

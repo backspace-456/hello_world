@@ -1,0 +1,17 @@
+  INDEX_normalsearch (
+    from: Int
+    size: Int
+    aggs: INDEXAggModel
+    query: INDEXSearchModel
+    sort: [INDEXSort]
+    track_total_hits: Boolean
+  ): INDEXOutput
+
+  INDEX_objectsearch (
+    from: Int
+    size: Int
+    aggs: INDEXAggModel
+    query: INDEXObjectSearchModel
+    sort: jsonb
+    track_total_hits: Boolean
+  ): INDEXOutput

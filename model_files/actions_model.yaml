@@ -1,0 +1,22 @@
+  - name: INDEX_normalsearch
+    definition:
+      handler: "https://es.database.hitwh.net.cn:9002/index_/_search"
+      headers:
+      - name: Authorization
+        value: 'ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ=='
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
+  - name: INDEX_objectsearch
+    definition:
+      handler: "https://es.database.hitwh.net.cn:9002/index_/_search"
+      headers:
+      - name: Authorization
+        value: 'ApiKey MWRuS2NvSUJCazhNamZvd19RaVc6OG1QaUl1N21TUHVXTmlmSkJCZ2xmUQ=='
+      request_transform:
+        body: '{{$body.input}}'
+        method: GET
+        query_params: {}
+        template_engine: Kriti
